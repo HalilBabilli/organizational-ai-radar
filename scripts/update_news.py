@@ -1,3 +1,6 @@
+Update news · PY
+Copy
+
 #!/usr/bin/env python3
 """
 AI News Portal - Daily Update Script
@@ -404,6 +407,10 @@ def main():
     print("Fetching latest AI news...")
     news_data = fetch_news_from_claude()
     print(f"Fetched {len(news_data)} news items")
+    
+    # Sort by weightedScore in descending order (highest first)
+    news_data.sort(key=lambda x: float(x.get('weightedScore', 0)), reverse=True)
+    print("Sorted news by importance score (descending)")
     
     print("Generating HTML...")
     html = generate_html(news_data)
