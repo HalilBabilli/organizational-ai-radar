@@ -10,7 +10,6 @@ import json
 import re
 from datetime import datetime
 
-# HTML template with placeholder for news data
 HTML_TEMPLATE = '''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -128,7 +127,7 @@ HTML_TEMPLATE = '''<!DOCTYPE html>
                     </div>
                     <div class="logo-text">
                         <h1>Organizational AI <span>Radar</span></h1>
-                        <p>News Ranked by Importance • Updated: %%UPDATE_DATE%%</p>
+                        <p>News Ranked by Importance - Updated: %%UPDATE_DATE%%</p>
                     </div>
                 </div>
             </div>
@@ -204,7 +203,7 @@ HTML_TEMPLATE = '''<!DOCTYPE html>
 
         <footer>
             <div class="footer-inner">
-                <span>Organizational AI Radar • Auto-updated daily at 7:00 AM CET</span>
+                <span>Organizational AI Radar - Auto-updated daily at 7:00 AM CET</span>
                 <span>Powered by Claude AI</span>
             </div>
         </footer>
@@ -318,85 +317,58 @@ HTML_TEMPLATE = '''<!DOCTYPE html>
 
 
 def fetch_news_from_claude():
-    """Fetch and score AI news using Claude API with web search."""
     client = anthropic.Anthropic()
     
     prompt = """Search for the latest AI and artificial intelligence news from the past 2-3 days. 
 Focus on respected sources: MIT Technology Review, TechCrunch, Reuters, Wired, Ars Technica, The Verge, Nature, Science, Financial Times, Bloomberg, CNBC.
 
-Score and rank each news item using these 5 criteria with exact weightings:
+Score each news item using these 5 criteria:
 
-1. CAPABILITY INFLECTION (30% weight)
-   Question: Does this development materially change what AI systems can do?
-   Score 0-10: 0=no capability change, 10=fundamental new capability unlocked
+1. CAPABILITY (30% weight): Does this change what AI can do? 0-10
+2. ECONOMIC (25% weight): How much of the economy does this touch? 0-10
+3. IRREVERSIBILITY (20% weight): Does this lock AI into a new path? 0-10
+4. TIMELINE (15% weight): Does this speed up or slow down AI progress? 0-10
+5. SYSTEMIC (10% weight): Does this trigger effects beyond AI? 0-10
 
-2. ECONOMIC SURFACE AREA (25% weight)
-   Question: How much of the economy does this news touch or threaten to reshape?
-   Score 0-10: 0=niche impact, 10=economy-wide disruption
+Calculate: (capability*0.30) + (economic*0.25) + (irreversibility*0.20) + (timeline*0.15) + (systemic*0.10)
 
-3. IRREVERSIBILITY (20% weight)
-   Question: Does this event lock the AI trajectory into a new path?
-   Score 0-10: 0=easily reversed, 10=permanent trajectory shift
-
-4. TIMELINE EFFECT (15% weight)
-   Question: Does this news meaningfully speed up or slow down AI progress overall?
-   Score 0-10: 0=no timeline impact, 10=major acceleration or deceleration
-
-5. SYSTEMIC EFFECTS (10% weight)
-   Question: Does this news trigger cascading effects beyond AI itself?
-   Score 0-10: 0=contained to AI, 10=ripples across society/geopolitics
-
-Calculate weighted score: (capability×0.30) + (economic×0.25) + (irreversibility×0.20) + (timeline×0.15) + (systemic×0.10)
-
-Return ONLY a JSON array with 15 news items, SORTED BY WEIGHTED SCORE (highest first).
-
-Each item must have:
+Return ONLY a JSON array with 15 news items. Each item must have:
 - source: publication name
-- date: publication date (e.g., "Jan 5, 2026")
-- title: article headline
-- summary: 2-3 sentence summary of key points
-- url: full article URL
-- scores: { "capability": 0-10, "economic": 0-10, "irreversibility": 0-10, "timeline": 0-10, "systemic": 0-10 }
-- weightedScore: calculated total (0-10 scale, one decimal)
-- primaryDriver: "capability" | "economic" | "irreversibility" | "timeline" | "systemic" (whichever scored highest)
+- date: e.g. "Jan 5, 2026"
+- title: headline
+- summary: 2-3 sentences
+- url: article URL
+- scores: {"capability": 0-10, "economic": 0-10, "irreversibility": 0-10, "timeline": 0-10, "systemic": 0-10}
+- weightedScore: calculated total (one decimal)
+- primaryDriver: "capability" | "economic" | "irreversibility" | "timeline" | "systemic"
 
-Return ONLY valid JSON array. No markdown, no backticks, no explanation."""
+Return ONLY valid JSON array, no markdown, no backticks."""
 
     response = client.messages.create(
         model="claude-sonnet-4-20250514",
         max_tokens=4096,
-        tools=[{
-            "type": "web_search_20250305",
-            "name": "web_search"
-        }],
+        tools=[{"type": "web_search_20250305", "name": "web_search"}],
         messages=[{"role": "user", "content": prompt}]
     )
     
-    # Extract text from response
     json_text = ""
     for block in response.content:
         if hasattr(block, 'text'):
             json_text += block.text
     
-    # Clean and parse JSON
     json_text = re.sub(r'```json|```', '', json_text).strip()
     
-    # Find JSON array in response
     match = re.search(r'\[[\s\S]*\]', json_text)
     if match:
-        news_data = json.loads(match.group())
-        return news_data
+        return json.loads(match.group())
     else:
         raise ValueError("Could not parse news JSON from response")
 
 
 def generate_html(news_data):
-    """Generate HTML with embedded news data."""
     update_date = datetime.now().strftime("%B %d, %Y at %H:%M UTC")
-    
     html = HTML_TEMPLATE.replace('%%NEWS_DATA%%', json.dumps(news_data, indent=2))
     html = html.replace('%%UPDATE_DATE%%', update_date)
-    
     return html
 
 
@@ -405,7 +377,6 @@ def main():
     news_data = fetch_news_from_claude()
     print(f"Fetched {len(news_data)} news items")
     
-    # Sort by weightedScore in descending order (highest first)
     news_data.sort(key=lambda x: float(x.get('weightedScore', 0)), reverse=True)
     print("Sorted news by importance score (descending)")
     
@@ -421,3 +392,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
