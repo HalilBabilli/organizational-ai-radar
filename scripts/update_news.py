@@ -1,6 +1,3 @@
-Update news · PY
-Copy
-
 #!/usr/bin/env python3
 """
 AI News Portal - Daily Update Script
