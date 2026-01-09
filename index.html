@@ -115,7 +115,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>Organizational AI <span>Radar</span></h1>
-                        <p>News Ranked by Importance - Updated: January 08, 2026 at 06:52 UTC</p>
+                        <p>News Ranked by Importance - Updated: January 09, 2026 at 06:21 UTC</p>
                     </div>
                 </div>
             </div>
@@ -200,47 +200,63 @@
     <script>
         const newsData = [
   {
-    "source": "CNN Business",
-    "date": "Jan 5, 2026",
-    "title": "Vera Rubin: Nvidia just mapped out its future in AI",
-    "summary": "Nvidia unveiled Vera Rubin computing platform for AI data centers at CES, launching in H2 2026. All major cloud providers will deploy the new architecture first. The platform represents Nvidia's next evolution beyond Blackwell chips for training sophisticated AI models.",
-    "url": "https://www.cnn.com/2026/01/05/tech/vera-rubin-nvidia-ai-ces",
+    "source": "IBM",
+    "date": "Jan 1, 2026",
+    "title": "IBM has publicly stated that 2026 will mark the first time a quantum computer will outperform a classical computer",
+    "summary": "IBM announced 2026 as milestone year when quantum computing achieves advantage over classical systems. This quantum advantage will unlock breakthroughs in drug development, materials science, and financial optimization across industries facing complex challenges.",
+    "url": "https://www.ibm.com/think/news/ai-tech-trends-predictions-2026",
     "scores": {
       "capability": 8,
-      "economic": 8,
+      "economic": 7,
+      "irreversibility": 9,
+      "timeline": 8,
+      "systemic": 8
+    },
+    "weightedScore": 8.0,
+    "primaryDriver": "irreversibility"
+  },
+  {
+    "source": "NVIDIA",
+    "date": "Jan 6, 2026",
+    "title": "NVIDIA Kicks Off the Next Generation of AI With Rubin \u2014 Six New Chips",
+    "summary": "NVIDIA launched Rubin platform comprising six new chips designed as one AI supercomputer. Vera Rubin NVL72 systems cut inference cost per token by 10x and reduce GPUs needed for training by four times. Available from partners second half of 2026.",
+    "url": "https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer",
+    "scores": {
+      "capability": 8,
+      "economic": 9,
       "irreversibility": 7,
       "timeline": 8,
-      "systemic": 6
+      "systemic": 7
+    },
+    "weightedScore": 7.9,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Compare the Cloud",
+    "date": "Jan 7, 2026",
+    "title": "IBM Says 2026 Is the Year Quantum Computing Finally Beats Classical",
+    "summary": "IBM staked roadmap on delivering quantum advantage by end of 2026 with real problem-solving capabilities. UK government committed \u00a3670 million over next decade. Heron R2 processor reduced workload times from 122 hours to 2.4 hours.",
+    "url": "https://www.comparethecloud.net/opinions/ibm-2026-quantum-computing-beats-classical",
+    "scores": {
+      "capability": 8,
+      "economic": 7,
+      "irreversibility": 8,
+      "timeline": 8,
+      "systemic": 7
     },
     "weightedScore": 7.6,
     "primaryDriver": "capability"
   },
   {
     "source": "Nature",
-    "date": "Jan 1, 2026",
-    "title": "Science in 2026: what to expect this year",
-    "summary": "Nature outlines major science developments for 2026 including AI scientists, refined AI models that could outcompete large language models in reasoning, and clinical trials of gene editing for rare human disorders. The rise of AI scientists is a key theme.",
-    "url": "https://www.nature.com/articles/d41586-025-04114-0",
+    "date": "Jan 7, 2026",
+    "title": "DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning",
+    "summary": "DeepSeek-R1 demonstrates that reasoning abilities of large language models can be incentivized through pure reinforcement learning, removing need for human-annotated demonstrations. The model facilitates emergent development of advanced reasoning patterns like self-reflection, verification, and dynamic strategy adaptation.",
+    "url": "https://www.nature.com/articles/s41586-025-09422-z",
     "scores": {
-      "capability": 8,
+      "capability": 9,
       "economic": 6,
-      "irreversibility": 8,
-      "timeline": 7,
-      "systemic": 7
-    },
-    "weightedScore": 7.4,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "TechCrunch",
-    "date": "Jan 6, 2026",
-    "title": "CES 2026: Everything revealed, from Nvidia's debuts to AMD's new chips to Razer's AI oddities",
-    "summary": "Nvidia unveiled Rubin computing architecture to replace Blackwell in H2 2026, with speed and storage upgrades. The company showcased Alpamayo AI models for autonomous vehicles and pushed into physical AI. Amazon launched Alexa+ with browser access and enhanced AI capabilities.",
-    "url": "https://techcrunch.com/2026/01/06/ces-2026-everything-revealed-from-nvidias-debuts-to-amds-new-chips-to-razers-ai-oddities/",
-    "scores": {
-      "capability": 8,
-      "economic": 7,
-      "irreversibility": 6,
+      "irreversibility": 7,
       "timeline": 8,
       "systemic": 6
     },
@@ -248,196 +264,180 @@
     "primaryDriver": "capability"
   },
   {
-    "source": "MIT Technology Review",
-    "date": "Jan 5, 2026",
-    "title": "What's next for AI in 2026",
-    "summary": "MIT Technology Review's AI writers predict major trends for 2026. Chinese open-source models like DeepSeek R1 are gaining momentum and closing the gap with Western firms. Trump's regulatory battle against state AI laws is intensifying, while legal battles over AI accountability increase.",
-    "url": "https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/",
+    "source": "Business Insider",
+    "date": "Jan 2, 2026",
+    "title": "China's DeepSeek kicked off 2026 with new AI training method analysts say is 'breakthrough'",
+    "summary": "DeepSeek published research describing 'Manifold-Constrained Hyper-Connections' training approach to scale models without instability. Analysts call it striking breakthrough that could shape evolution of foundational models and have industry-wide ripple effects.",
+    "url": "https://dnyuz.com/2026/01/02/chinas-deepseek-kicked-off-2026-with-a-new-ai-training-method-that-analysts-say-is-a-breakthrough-for-scaling/",
     "scores": {
       "capability": 7,
-      "economic": 7,
+      "economic": 6,
       "irreversibility": 8,
-      "timeline": 8,
+      "timeline": 7,
       "systemic": 6
     },
-    "weightedScore": 7.2,
+    "weightedScore": 6.9,
     "primaryDriver": "irreversibility"
   },
   {
-    "source": "TechCrunch",
-    "date": "Jan 2, 2026",
-    "title": "In 2026, AI will move from hype to pragmatism",
-    "summary": "Industry experts predict 2026 as a transition year from brute-force scaling to practical deployments. Smaller models will gain prominence over large language models for enterprise use. Physical AI and world models will advance significantly while AI becomes more integrated into human workflows.",
-    "url": "https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/",
+    "source": "MIT Technology Review",
+    "date": "Jan 5, 2026",
+    "title": "What's next for AI in 2026",
+    "summary": "Chinese AI firms' near-unanimous embrace of open source has earned them global goodwill and long-term trust advantage. 2026 will see Silicon Valley apps quietly ship on top of Chinese open models, with the lag between Chinese releases and Western frontier shrinking to weeks. Political warfare over AI regulation expected between White House and states.",
+    "url": "https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/",
     "scores": {
       "capability": 6,
-      "economic": 8,
-      "irreversibility": 7,
+      "economic": 7,
+      "irreversibility": 8,
       "timeline": 7,
-      "systemic": 7
+      "systemic": 6
     },
-    "weightedScore": 7.0,
+    "weightedScore": 6.8,
+    "primaryDriver": "irreversibility"
+  },
+  {
+    "source": "ScienceDaily",
+    "date": "Jan 7, 2026",
+    "title": "AI may not need massive training data after all",
+    "summary": "Johns Hopkins research shows AI built with brain-inspired designs can mimic human brain activity before seeing training data. The study challenges dominant strategy of relying on enormous datasets and vast computing power, highlighting value of brain-like architectural foundation.",
+    "url": "https://www.sciencedaily.com/releases/2025/12/251228074457.htm",
+    "scores": {
+      "capability": 7,
+      "economic": 8,
+      "irreversibility": 6,
+      "timeline": 6,
+      "systemic": 5
+    },
+    "weightedScore": 6.7,
     "primaryDriver": "economic"
   },
   {
-    "source": "MIT Sloan Management Review",
-    "date": "Jan 6, 2026",
-    "title": "Five Trends in AI and Data Science for 2026",
-    "summary": "MIT researchers identify five key AI trends: potential AI bubble deflation, growth of AI factory infrastructure, focus on organizational rather than individual AI use, continued agentic AI development despite hype, and ongoing questions about data and AI management.",
-    "url": "https://sloanreview.mit.edu/article/five-trends-in-ai-and-data-science-for-2026/",
+    "source": "Bloomberg",
+    "date": "Jan 8, 2026",
+    "title": "AI Spending Boom Fuels 24-Year High for Convertible Bond Deals",
+    "summary": "Companies issuing convertible bonds at fastest pace in 24 years as AI development spurs hunt for cheaper financing. The artificial intelligence spending boom is driving unprecedented demand for alternative funding mechanisms.",
+    "url": "https://www.bloomberg.com/news/articles/2026-01-08/ai-spending-boom-fuels-24-year-high-for-convertible-bond-deals",
+    "scores": {
+      "capability": 4,
+      "economic": 9,
+      "irreversibility": 6,
+      "timeline": 6,
+      "systemic": 7
+    },
+    "weightedScore": 6.5,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "Jan 8, 2026",
+    "title": "CES 2026: Everything revealed, from Nvidia's debuts to AMD's new chips",
+    "summary": "CES 2026 featured major AI hardware announcements with Nvidia's Vera Rubin platform debut. Caterpillar and Nvidia announced 'Cat AI Assistant' pilot program for construction equipment. Amazon launched Alexa+ with browser access and revamped bot-focused app.",
+    "url": "https://techcrunch.com/2026/01/08/ces-2026-everything-revealed-from-nvidias-debuts-to-amds-new-chips-to-razers-ai-oddities/",
+    "scores": {
+      "capability": 6,
+      "economic": 7,
+      "irreversibility": 5,
+      "timeline": 7,
+      "systemic": 6
+    },
+    "weightedScore": 6.3,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Axios",
+    "date": "Jan 1, 2026",
+    "title": "AI 2026 trends: bubbles, agents, demand for ROI",
+    "summary": "2026 expected to be 'show me the money' year for AI with growing pressure on companies to prove ROI. Rapid model maker race continues with fierce price competition. Businesses face another year of messy agent rollouts with many sitting idle.",
+    "url": "https://www.axios.com/2026/01/01/ai-2026-money-openai-google-anthropic-agents",
     "scores": {
       "capability": 5,
-      "economic": 9,
-      "irreversibility": 7,
+      "economic": 8,
+      "irreversibility": 5,
       "timeline": 6,
-      "systemic": 8
+      "systemic": 7
     },
-    "weightedScore": 7.0,
+    "weightedScore": 6.3,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "CNBC",
+    "date": "Jan 6, 2026",
+    "title": "DeepSeek blew up markets a year ago. Why hasn't it done so since?",
+    "summary": "DeepSeek's 2025 R1 model release caused market panic but recent updates haven't had same impact. Company struggling with compute limitations and delayed R2 model release due to challenges training on Huawei chips amid US export controls.",
+    "url": "https://www.cnbc.com/2026/01/06/why-deepseek-didnt-cause-an-investor-frenzy-again-in-2025.html",
+    "scores": {
+      "capability": 5,
+      "economic": 7,
+      "irreversibility": 6,
+      "timeline": 6,
+      "systemic": 6
+    },
+    "weightedScore": 6.0,
     "primaryDriver": "economic"
   },
   {
     "source": "Bloomberg",
     "date": "Jan 3, 2026",
     "title": "AI Debt Spree Is Fueling a Credit Trading Frenzy: Credit Weekly",
-    "summary": "AI spending is driving record corporate bond trading volumes, reaching $50 billion daily in 2025. The boom in AI infrastructure investment is generating unprecedented activity in credit markets as companies borrow heavily for AI initiatives.",
+    "summary": "AI spending growth helping generate fresh records for corporate-bond trading. Average of $50 billion in bonds changed hands each trading day in 2025, marking record level up from $46 billion in 2024.",
     "url": "https://www.bloomberg.com/news/articles/2026-01-03/ai-debt-spree-is-fueling-a-credit-trading-frenzy-credit-weekly",
     "scores": {
-      "capability": 4,
-      "economic": 9,
-      "irreversibility": 7,
-      "timeline": 6,
+      "capability": 3,
+      "economic": 8,
+      "irreversibility": 5,
+      "timeline": 5,
       "systemic": 7
     },
-    "weightedScore": 7.0,
+    "weightedScore": 5.9,
     "primaryDriver": "economic"
   },
   {
-    "source": "Understanding AI",
-    "date": "Jan 1, 2026",
-    "title": "17 predictions for AI in 2026",
-    "summary": "AI experts predict Tesla will debut truly driverless robotaxis in 2026, though expansion will be limited. Big Tech capital spending on AI infrastructure is expected to exceed $500 billion, and OpenAI targets $30 billion revenue, nearly doubling 2025 figures.",
-    "url": "https://www.understandingai.org/p/17-predictions-for-ai-in-2026",
-    "scores": {
-      "capability": 7,
-      "economic": 8,
-      "irreversibility": 6,
-      "timeline": 7,
-      "systemic": 6
-    },
-    "weightedScore": 6.9,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "Nature",
-    "date": "Jan 1, 2026",
-    "title": "Let 2026 be the year the world comes together for AI safety",
-    "summary": "Nature editorial calls for global cooperation on AI safety and regulation. Notes that China is pursuing innovation through open technologies with nationwide regulations requiring disclosure, while US officials worry regulation will hurt competitiveness against China.",
-    "url": "https://www.nature.com/articles/d41586-025-04106-0",
-    "scores": {
-      "capability": 4,
-      "economic": 6,
-      "irreversibility": 8,
-      "timeline": 6,
-      "systemic": 9
-    },
-    "weightedScore": 6.5,
-    "primaryDriver": "systemic"
-  },
-  {
-    "source": "MIT Technology Review",
-    "date": "Jan 6, 2026",
-    "title": "The Download: Our predictions for AI, and good climate news",
-    "summary": "MIT Technology Review announces its annual AI predictions for 2026. Tesla is expected to debut genuinely driverless vehicles. The publication also opens submissions for its Innovators Under 35 competition recognizing young scientists and inventors.",
-    "url": "https://www.technologyreview.com/2026/01/06/1130744/the-download-our-predictions-for-ai-and-good-climate-news",
-    "scores": {
-      "capability": 7,
-      "economic": 6,
-      "irreversibility": 5,
-      "timeline": 7,
-      "systemic": 6
-    },
-    "weightedScore": 6.4,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "Bloomberg",
-    "date": "Jan 4, 2026",
-    "title": "Is the AI Boom a Bubble Waiting to Pop? Here's What History Says",
-    "summary": "Bloomberg examines whether the AI boom represents a financial bubble destined to burst. The article analyzes historical precedents and current market conditions as AI continues driving stock market gains to new highs.",
-    "url": "https://www.bloomberg.com/news/articles/2026-01-04/is-the-ai-boom-a-bubble-waiting-to-pop-here-s-what-history-says",
-    "scores": {
-      "capability": 3,
-      "economic": 9,
-      "irreversibility": 6,
-      "timeline": 5,
-      "systemic": 8
-    },
-    "weightedScore": 6.4,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "TechCrunch",
-    "date": "Jan 1, 2026",
-    "title": "OpenAI bets big on audio as Silicon Valley declares war on screens",
-    "summary": "OpenAI and Silicon Valley are shifting toward audio-first AI interfaces, moving away from screen-based interactions. AI rings and voice assistants are emerging, with companies building conversational AI that doesn't require visual displays.",
-    "url": "https://techcrunch.com/2026/01/01/openai-bets-big-on-audio-as-silicon-valley-declares-war-on-screens/",
-    "scores": {
-      "capability": 6,
-      "economic": 6,
-      "irreversibility": 7,
-      "timeline": 6,
-      "systemic": 6
-    },
-    "weightedScore": 6.3,
-    "primaryDriver": "irreversibility"
-  },
-  {
-    "source": "MIT Technology Review",
-    "date": "Jan 7, 2026",
-    "title": "MIT Technology Review unveils the full agenda for EmTech AI 2026",
-    "summary": "MIT Technology Review announced EmTech AI 2026 conference agenda focusing on operationalizing AI for competitive advantage. The conference emphasizes 'The Great Integration' theme as AI becomes infrastructure across organizations and workflows.",
-    "url": "https://www.prnewswire.com/news-releases/mit-technology-review-unveils-the-full-agenda-for-emtech-ai-2026-302654591.html",
-    "scores": {
-      "capability": 4,
-      "economic": 7,
-      "irreversibility": 5,
-      "timeline": 5,
-      "systemic": 6
-    },
-    "weightedScore": 5.6,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "NBC News",
+    "source": "CNBC",
     "date": "Jan 2, 2026",
-    "title": "AI stocks jump amid broadly positive outlook for 2026 markets",
-    "summary": "AI stocks surged as markets opened 2026 with optimism. Artificial intelligence continues driving market gains while precious metals and crude oil showed mixed performance. Light trading volume characterized the post-holiday period.",
-    "url": "https://www.nbcnews.com/business/markets/ai-stocks-jump-broadly-positive-outlook-2026-markets-rcna251902",
+    "title": "Chip stocks rally to start 2026 after third-straight winning year",
+    "summary": "Chipmaking stocks rallied to start 2026 with Micron and ASML jumping 10% and 9% respectively. This marks third consecutive year of gains despite growing AI valuation concerns. Investors raised concerns over prospect of AI bubble as sector continues massive ascent.",
+    "url": "https://www.cnbc.com/2026/01/02/chipmakers-2026-ai-trade.html",
     "scores": {
-      "capability": 3,
+      "capability": 4,
       "economic": 8,
       "irreversibility": 4,
       "timeline": 5,
-      "systemic": 6
+      "systemic": 7
     },
-    "weightedScore": 5.5,
+    "weightedScore": 5.8,
     "primaryDriver": "economic"
   },
   {
-    "source": "Science",
-    "date": "Jan 6, 2026",
-    "title": "Resisting AI slop",
-    "summary": "Science journal's Editor-in-Chief discusses maintaining quality scientific literature amid AI proliferation. The journal implements strict policies against AI-generated content while using AI tools for plagiarism detection and data sharing compliance.",
-    "url": "https://www.science.org/doi/10.1126/science.aee8267",
+    "source": "Inside Higher Ed",
+    "date": "Jan 5, 2026",
+    "title": "5 Predictions on How AI Will Shape Higher Ed in 2026",
+    "summary": "Higher education faces growing disenchantment with AI while seeking to end fragmentation of systems. Institutions will prioritize agentic orchestration and workflow automation. Public opinion on AI versus academia could impact enrollment and funding.",
+    "url": "https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/01/05/5-predictions-how-ai-will-shape-higher-ed",
+    "scores": {
+      "capability": 4,
+      "economic": 6,
+      "irreversibility": 5,
+      "timeline": 5,
+      "systemic": 8
+    },
+    "weightedScore": 5.5,
+    "primaryDriver": "systemic"
+  },
+  {
+    "source": "Gizmodo",
+    "date": "Jan 7, 2026",
+    "title": "Will 2026 Be the Year That the AI Industry Stops Crowing About 'AGI'?",
+    "summary": "Industry leaders are backing away from AGI promises as large language models appear incapable of reaching that benchmark. OpenAI CEO Sam Altman called AGI 'not super useful term,' while Salesforce CEO Marc Benioff described it as marketing 'hypnosis.'",
+    "url": "https://gizmodo.com/will-2026-be-the-year-that-the-ai-industry-stops-crowing-about-agi-2000707012",
     "scores": {
       "capability": 3,
-      "economic": 4,
-      "irreversibility": 6,
-      "timeline": 4,
-      "systemic": 7
+      "economic": 6,
+      "irreversibility": 7,
+      "timeline": 5,
+      "systemic": 6
     },
-    "weightedScore": 4.7,
-    "primaryDriver": "systemic"
+    "weightedScore": 5.4,
+    "primaryDriver": "irreversibility"
   }
 ];
 
