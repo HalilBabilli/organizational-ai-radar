@@ -115,7 +115,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>Organizational AI <span>Radar</span></h1>
-                        <p>News Ranked by Importance - Updated: February 16, 2026 at 06:53 UTC</p>
+                        <p>News Ranked by Importance - Updated: February 18, 2026 at 06:51 UTC</p>
                     </div>
                 </div>
             </div>
@@ -200,223 +200,207 @@
     <script>
         const newsData = [
   {
-    "source": "Bloomberg",
-    "date": "Feb 12, 2026",
-    "title": "Hyperscalers to invest $3 trillion in AI infrastructure through 2030",
-    "summary": "Meta, Microsoft, Amazon, and Alphabet planning unprecedented $650+ billion AI spending in 2026 alone. Investment described as orders of magnitude greater than Manhattan Project, raising questions about financial system stability if boom turns to bust.",
-    "url": "https://www.bloomberg.com/opinion/articles/2026-02-12/ai-bubble-even-success-can-put-financial-system-at-risk",
+    "source": "Nature",
+    "date": "Feb 2, 2026",
+    "title": "Scientists Argue AI Has Achieved Human-Level Intelligence",
+    "summary": "Researchers published evidence in Nature arguing that current large language models display artificial general intelligence, stating 'the vision of human-level machine intelligence is now a reality.'",
+    "url": "https://www.nature.com/articles/d41586-026-00285-6",
     "scores": {
-      "capability": 6,
+      "capability": 10,
+      "economic": 8,
+      "irreversibility": 9,
+      "timeline": 9,
+      "systemic": 9
+    },
+    "weightedScore": 9.0,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "Financial Times/Fortune",
+    "date": "Feb 13, 2026",
+    "title": "Microsoft AI Chief Predicts White-Collar Work Automation in 18 Months",
+    "summary": "Microsoft AI CEO Mustafa Suleyman predicts AI will achieve human-level performance on most professional tasks within 18 months, targeting accounting, legal, marketing, and project management.",
+    "url": "https://fortune.com/2026/02/13/when-will-ai-kill-white-collar-office-jobs-18-months-microsoft-mustafa-suleyman/",
+    "scores": {
+      "capability": 9,
+      "economic": 10,
+      "irreversibility": 7,
+      "timeline": 9,
+      "systemic": 9
+    },
+    "weightedScore": 8.8,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "MIT Technology Review",
+    "date": "Feb 12, 2026",
+    "title": "Chinese Open-Source AI Models Surpass US Downloads",
+    "summary": "A new MIT study finds Chinese open-source AI models have exceeded US models in total downloads. Qwen accounted for over 30% of model downloads on Hugging Face in 2024.",
+    "url": "https://www.technologyreview.com/2026/02/12/1132811/whats-next-for-chinese-open-source-ai/",
+    "scores": {
+      "capability": 7,
       "economic": 9,
       "irreversibility": 8,
-      "timeline": 7,
+      "timeline": 8,
       "systemic": 8
+    },
+    "weightedScore": 7.9,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "Feb 17, 2026",
+    "title": "Anthropic Raises $30 Billion Series G at $380 Billion Valuation",
+    "summary": "Anthropic announced a massive $30 billion funding round valuing the AI company at $380 billion. Over 30 investors participated including Founders Fund, Coatue, and Nvidia.",
+    "url": "https://techcrunch.com/2026/02/17/here-are-the-17-us-based-ai-companies-that-have-raised-100m-or-more-in-2026/",
+    "scores": {
+      "capability": 6,
+      "economic": 10,
+      "irreversibility": 7,
+      "timeline": 8,
+      "systemic": 5
     },
     "weightedScore": 7.6,
     "primaryDriver": "economic"
   },
   {
-    "source": "MIT Technology Review",
-    "date": "Feb 12, 2026",
-    "title": "Chinese open-source models surge in downloads, surpassing US models globally",
-    "summary": "Chinese open models like Alibaba's Qwen have surpassed US models in total downloads on Hugging Face. Moonshot AI's Kimi K2.5 matches Anthropic's Claude on benchmarks. Chinese companies are rapidly releasing competitive AI models that match Western performance at lower costs.",
-    "url": "https://www.technologyreview.com/2026/02/12/1132811/whats-next-for-chinese-open-source-ai/",
-    "scores": {
-      "capability": 7,
-      "economic": 8,
-      "irreversibility": 8,
-      "timeline": 7,
-      "systemic": 6
-    },
-    "weightedScore": 7.4,
-    "primaryDriver": "irreversibility"
-  },
-  {
-    "source": "Nature",
-    "date": "Jan 14, 2026",
-    "title": "AI tools boost scientists' productivity but narrow research diversity, major study finds",
-    "summary": "Analysis of 41.3 million research papers shows AI-augmented scientists publish 3x more papers and receive 4.84x more citations. However, AI collectively narrows scientific focus and reduces collaboration, concentrating work in data-rich areas.",
-    "url": "https://www.nature.com/articles/s41586-025-09922-y",
-    "scores": {
-      "capability": 7,
-      "economic": 6,
-      "irreversibility": 8,
-      "timeline": 7,
-      "systemic": 9
-    },
-    "weightedScore": 7.3,
-    "primaryDriver": "systemic"
-  },
-  {
-    "source": "ScienceDaily",
-    "date": "Jan 4, 2026",
-    "title": "Brain-like AI architecture performs without massive training data",
-    "summary": "Johns Hopkins researchers found convolutional neural networks with brain-like architecture match traditional AI performance without training on millions of images. Suggests architectural design, not just data scale, drives AI capabilities.",
-    "url": "https://www.sciencedaily.com/releases/2025/12/251228074457.htm",
-    "scores": {
-      "capability": 8,
-      "economic": 6,
-      "irreversibility": 7,
-      "timeline": 8,
-      "systemic": 6
-    },
-    "weightedScore": 7.2,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "ScienceDaily",
-    "date": "Feb 10, 2026",
-    "title": "AI system interprets brain MRIs in seconds, flags emergencies",
-    "summary": "University of Michigan created AI that analyzes brain MRI scans in seconds, accurately identifying neurological conditions and urgent cases. Trained on hundreds of thousands of scans, system could revolutionize emergency medical response.",
-    "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
-    "scores": {
-      "capability": 8,
-      "economic": 7,
-      "irreversibility": 6,
-      "timeline": 7,
-      "systemic": 8
-    },
-    "weightedScore": 7.2,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "Reuters Institute",
-    "date": "Jan 12, 2026",
-    "title": "News organizations forecast 40% decline in search traffic due to AI answer engines",
-    "summary": "Reuters Institute survey of 280 news executives across 51 countries predicts massive traffic loss as AI systems like ChatGPT and Google AI Overviews divert audiences. Industry pivoting to direct audience relationships and creator partnerships.",
-    "url": "https://www.ifj.org/media-centre/news/detail/category/ai/article/reuters-digital-report-2026-journalisms-pivot-navigating-the-ai-and-creators-squeeze",
-    "scores": {
-      "capability": 5,
-      "economic": 8,
-      "irreversibility": 8,
-      "timeline": 7,
-      "systemic": 8
-    },
-    "weightedScore": 7.2,
-    "primaryDriver": "economic"
-  },
-  {
     "source": "TechCrunch",
-    "date": "Jan 2, 2026",
-    "title": "AI industry shifts from hype to pragmatism with world models and smaller deployments",
-    "summary": "2026 marks transition from scaling large models to practical deployment. Focus shifting to world models, smaller specialized models, and AI agents that actually augment human workflows rather than replace them entirely.",
-    "url": "https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/",
+    "date": "Feb 5, 2026",
+    "title": "OpenAI Launches Frontier Platform for Enterprise AI Agent Management",
+    "summary": "OpenAI announced Frontier, an end-to-end platform for enterprises to build and manage AI agents. The open platform allows management of agents built outside OpenAI.",
+    "url": "https://techcrunch.com/2026/02/05/openai-launches-a-way-for-enterprises-to-build-and-manage-ai-agents/",
     "scores": {
       "capability": 7,
-      "economic": 7,
-      "irreversibility": 7,
+      "economic": 8,
+      "irreversibility": 6,
       "timeline": 8,
       "systemic": 6
     },
     "weightedScore": 7.0,
-    "primaryDriver": "timeline"
+    "primaryDriver": "capability"
   },
   {
     "source": "CNBC",
-    "date": "Feb 11, 2026",
-    "title": "AI tax planning tool triggers financial services stock selloff",
-    "summary": "Altruist's AI tax planning tool promising work 'within minutes' caused major selloff. LPL Financial dropped 8.3%, Charles Schwab fell 7.4%, Morgan Stanley down 2.4%. Investors fear AI replacing profitable advisory services.",
-    "url": "https://www.cnbc.com/2026/02/10/the-ai-threat-wrecked-software-stocks-now-broker-stocks-look-next-with-lpl-down-11percent.html",
+    "date": "Feb 14, 2026",
+    "title": "Chinese AI Companies Release Advanced Video Generation Models",
+    "summary": "Alibaba, ByteDance, and Kuaishou released new AI models showing advancements in robotics and video generation, directly competing with OpenAI's Sora and Google's offerings.",
+    "url": "https://www.cnbc.com/2026/02/14/new-china-ai-models-alibaba-bytedance-seedance-kuaishou-kling.html",
+    "scores": {
+      "capability": 8,
+      "economic": 7,
+      "irreversibility": 6,
+      "timeline": 7,
+      "systemic": 6
+    },
+    "weightedScore": 6.9,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "MIT Technology Review",
+    "date": "Feb 12, 2026",
+    "title": "AI Already Making Online Crimes Easier",
+    "summary": "Security researchers warn AI is speeding up and increasing the volume of scams. Criminals increasingly exploit deepfake technologies to impersonate people and swindle victims.",
+    "url": "https://www.technologyreview.com/2026/02/12/1132386/ai-already-making-online-swindles-easier/",
     "scores": {
       "capability": 6,
-      "economic": 8,
-      "irreversibility": 5,
+      "economic": 5,
+      "irreversibility": 7,
       "timeline": 8,
-      "systemic": 7
+      "systemic": 9
     },
     "weightedScore": 6.8,
-    "primaryDriver": "economic"
+    "primaryDriver": "systemic"
   },
   {
-    "source": "Bloomberg",
-    "date": "Feb 15, 2026",
-    "title": "AI disruption fears trigger massive stock market selloff across tech sectors",
-    "summary": "Financial services stocks plummeted as AI threatens entire economic segments. Mentions of AI disruption on earnings calls doubled compared to previous quarter. Investors dumping any company perceived at risk of AI displacement.",
-    "url": "https://www.bloomberg.com/news/articles/2026-02-15/a-stock-market-doom-loop-is-hitting-everything-that-touches-ai",
-    "scores": {
-      "capability": 5,
-      "economic": 9,
-      "irreversibility": 6,
-      "timeline": 6,
-      "systemic": 8
-    },
-    "weightedScore": 6.7,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "ScienceDaily",
-    "date": "Feb 2, 2026",
-    "title": "NASA's Mars rover uses AI for autonomous navigation planning",
-    "summary": "Perseverance rover makes history by using AI instead of human operators to plan driving routes on Mars. Vision-capable AI analyzes terrain data and images, marking major milestone in autonomous space exploration and AI decision-making.",
+    "source": "Science Daily",
+    "date": "Feb 10, 2026",
+    "title": "AI Reads Brain MRIs in Seconds, Flags Emergencies",
+    "summary": "University of Michigan researchers created an AI system that interprets brain MRI scans in seconds, accurately identifying neurological conditions and determining urgent care needs.",
     "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
     "scores": {
       "capability": 8,
-      "economic": 5,
-      "irreversibility": 7,
-      "timeline": 6,
-      "systemic": 7
+      "economic": 6,
+      "irreversibility": 5,
+      "timeline": 7,
+      "systemic": 8
     },
     "weightedScore": 6.7,
     "primaryDriver": "capability"
   },
   {
-    "source": "Nature",
-    "date": "Dec 29, 2025",
-    "title": "Global push for AI safety regulations as 70+ laws passed in 2024",
-    "summary": "At least 70 AI-related laws passed globally in 2024, with East Asia, Europe, and US states leading. Nature editorial calls for international cooperation on AI safety guardrails as 2026 becomes critical year for global AI governance.",
-    "url": "https://www.nature.com/articles/d41586-025-04106-0",
+    "source": "TechCrunch",
+    "date": "Feb 16, 2026",
+    "title": "India AI Summit Draws Major Tech Leaders, $600M Investment in Neysa",
+    "summary": "India's AI Impact Summit attracts executives from OpenAI, Anthropic, Google, and Microsoft. Blackstone invests $600 million in Indian AI startup Neysa, signaling major international AI investment.",
+    "url": "https://techcrunch.com/2026/02/16/all-the-important-news-from-the-ongoing-india-ai-summit/",
     "scores": {
-      "capability": 4,
-      "economic": 6,
-      "irreversibility": 8,
-      "timeline": 6,
-      "systemic": 9
+      "capability": 5,
+      "economic": 8,
+      "irreversibility": 6,
+      "timeline": 7,
+      "systemic": 7
     },
-    "weightedScore": 6.6,
-    "primaryDriver": "systemic"
+    "weightedScore": 6.5,
+    "primaryDriver": "economic"
   },
   {
-    "source": "MIT Technology Review",
-    "date": "Feb 2, 2026",
-    "title": "US government using AI video generators for public content without disclosure",
-    "summary": "Department of Homeland Security confirmed using AI video generators from Google and Adobe for public-facing content. Raises concerns about truth decay as AI-generated content shapes beliefs even when detected as fake.",
-    "url": "https://www.technologyreview.com/2026/02/02/1132068/what-weve-been-getting-wrong-about-ais-truth-crisis/",
+    "source": "Nature",
+    "date": "Feb 13, 2026",
+    "title": "AI Slop Floods Computer Science Journals and Conferences",
+    "summary": "The 2026 International Conference on Machine Learning received over 24,000 submissions\u2014double from 2025. Researchers warn of AI-generated 'slop' overwhelming peer review systems.",
+    "url": "https://www.nature.com/articles/d41586-025-03967-9",
     "scores": {
       "capability": 4,
       "economic": 5,
-      "irreversibility": 7,
-      "timeline": 5,
-      "systemic": 9
+      "irreversibility": 9,
+      "timeline": 7,
+      "systemic": 8
     },
-    "weightedScore": 6.0,
-    "primaryDriver": "systemic"
+    "weightedScore": 6.4,
+    "primaryDriver": "irreversibility"
   },
   {
-    "source": "MIT Technology Review",
-    "date": "Feb 5, 2026",
-    "title": "METR's AI capability graph becomes most misunderstood metric in AI discourse",
-    "summary": "METR's exponential AI capability plot driving both apocalyptic fears and utopian predictions. Experts warn graph doesn't reflect real-world AI deployment complexities, yet continues shaping major investment and policy decisions worth billions.",
-    "url": "https://www.technologyreview.com/2026/02/05/1132254/this-is-the-most-misunderstood-graph-in-ai/",
+    "source": "TechCrunch",
+    "date": "Feb 11, 2026",
+    "title": "Modal Labs Raises $2.5B Valuation for AI Inference Infrastructure",
+    "summary": "AI inference startup Modal Labs is in talks for funding at a $2.5 billion valuation, more than doubling from its $1.1 billion valuation five months ago.",
+    "url": "https://techcrunch.com/2026/02/11/ai-inference-startup-modal-labs-in-talks-to-raise-at-2-5b-valuation-sources-say/",
     "scores": {
-      "capability": 5,
-      "economic": 6,
-      "irreversibility": 6,
-      "timeline": 6,
-      "systemic": 7
+      "capability": 6,
+      "economic": 8,
+      "irreversibility": 5,
+      "timeline": 7,
+      "systemic": 4
     },
-    "weightedScore": 6.0,
-    "primaryDriver": "systemic"
+    "weightedScore": 6.3,
+    "primaryDriver": "economic"
   },
   {
-    "source": "Ars Technica",
-    "date": "Feb 14, 2026",
-    "title": "Major tech publication retracts AI-generated article with fabricated quotes",
-    "summary": "Ars Technica pulled story about matplotlib maintainer after revelation that all quotes were AI-generated fabrications. Incident highlights dangers of AI-generated journalism and breakdown of editorial controls at major tech publications.",
-    "url": "https://lemmy.libertarianfellowship.org/post/1087857",
+    "source": "Bloomberg",
+    "date": "Feb 16, 2026",
+    "title": "Anthropic Pentagon Talks Snag on AI Surveillance, Weapons",
+    "summary": "Anthropic is pushing back against Pentagon demands to use its Claude AI for 'all lawful purposes.' The company wants guardrails preventing mass surveillance of Americans and fully autonomous weapons.",
+    "url": "https://www.bloomberg.com/news/articles/2026-02-16/pentagon-is-close-to-cutting-ties-with-anthropic-axios-says",
     "scores": {
       "capability": 3,
       "economic": 4,
-      "irreversibility": 6,
+      "irreversibility": 8,
+      "timeline": 6,
+      "systemic": 8
+    },
+    "weightedScore": 5.6,
+    "primaryDriver": "irreversibility"
+  },
+  {
+    "source": "Nieman Lab",
+    "date": "Feb 5, 2026",
+    "title": "New York Bill Requires Disclaimers on AI-Generated News",
+    "summary": "New York legislators introduced the NY FAIR News Act requiring news organizations to label AI-generated content and mandate human review before publication.",
+    "url": "https://www.niemanlab.org/2026/02/a-new-bill-in-new-york-would-require-disclaimers-on-ai-generated-news-content/",
+    "scores": {
+      "capability": 2,
+      "economic": 4,
+      "irreversibility": 7,
       "timeline": 5,
       "systemic": 8
     },
@@ -424,19 +408,35 @@
     "primaryDriver": "systemic"
   },
   {
-    "source": "MIT Technology Review",
-    "date": "Feb 6, 2026",
-    "title": "Moltbook viral AI social network exposed as 'peak AI theater'",
-    "summary": "The viral social network for AI bots revealed agents simply mimicking trained social media behaviors without true intelligence. Experts warn that millions of 'dumb bots' can still wreak havoc through hidden instructions and security vulnerabilities.",
-    "url": "https://www.technologyreview.com/2026/02/06/1132448/moltbook-was-peak-ai-theater/",
+    "source": "TechCrunch",
+    "date": "Feb 11, 2026",
+    "title": "OpenAI Disbands Mission Alignment Team",
+    "summary": "OpenAI confirmed it disbanded the team responsible for communicating the company's mission to employees and the public, with members reassigned to other roles.",
+    "url": "https://techcrunch.com/2026/02/11/openai-disbands-mission-alignment-team-which-focused-on-safe-and-trustworthy-ai-development/",
     "scores": {
-      "capability": 3,
-      "economic": 4,
-      "irreversibility": 3,
-      "timeline": 4,
-      "systemic": 6
+      "capability": 2,
+      "economic": 3,
+      "irreversibility": 8,
+      "timeline": 5,
+      "systemic": 7
     },
-    "weightedScore": 3.9,
+    "weightedScore": 4.8,
+    "primaryDriver": "irreversibility"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "Feb 11, 2026",
+    "title": "xAI Reveals Interplanetary AI Ambitions in Public All-Hands",
+    "summary": "xAI published its all-hands meeting where Elon Musk outlined plans for space-based AI data centers, moon-based factories, and AI clusters capturing solar energy for interplanetary expansion.",
+    "url": "https://techcrunch.com/2026/02/11/xai-lays-out-interplanetary-ambitions-in-public-all-hands/",
+    "scores": {
+      "capability": 5,
+      "economic": 3,
+      "irreversibility": 6,
+      "timeline": 3,
+      "systemic": 7
+    },
+    "weightedScore": 4.7,
     "primaryDriver": "systemic"
   }
 ];
