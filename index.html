@@ -115,7 +115,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>Organizational AI <span>Radar</span></h1>
-                        <p>News Ranked by Importance - Updated: March 23, 2026 at 06:58 UTC</p>
+                        <p>News Ranked by Importance - Updated: March 24, 2026 at 06:53 UTC</p>
                     </div>
                 </div>
             </div>
@@ -200,128 +200,144 @@
     <script>
         const newsData = [
   {
+    "source": "Fortune",
+    "date": "Mar 13, 2026",
+    "title": "Morgan Stanley warns AI breakthrough coming in 2026, world not ready",
+    "summary": "Morgan Stanley warns that a transformative AI breakthrough is imminent in H1 2026, driven by unprecedented compute accumulation. OpenAI's GPT-5.4 scored 83% on economically valuable tasks, and the bank predicts massive workforce reductions due to AI efficiencies.",
+    "url": "https://fortune.com/2026/03/13/elon-musk-morgan-stanley-ai-leap-2026/",
+    "scores": {
+      "capability": 9,
+      "economic": 9,
+      "irreversibility": 8,
+      "timeline": 9,
+      "systemic": 9
+    },
+    "weightedScore": 8.8,
+    "primaryDriver": "capability"
+  },
+  {
     "source": "MIT Technology Review",
     "date": "Mar 20, 2026",
     "title": "OpenAI is throwing everything into building a fully automated researcher",
-    "summary": "OpenAI has refocused its research efforts on building an AI researcher - a fully automated agent-based system that can tackle large, complex problems independently. The company plans to build 'an autonomous AI research intern' by September, leading to a fully automated multi-agent research system by 2028.",
+    "summary": "OpenAI is refocusing its research efforts on building a fully automated AI researcher capable of tackling complex problems independently. The company plans to debut an 'AI intern' by September 2026 and a full multi-agent research system by 2028.",
     "url": "https://www.technologyreview.com/2026/03/20/1134438/openai-is-throwing-everything-into-building-a-fully-automated-researcher/",
     "scores": {
       "capability": 9,
-      "economic": 7,
+      "economic": 8,
+      "irreversibility": 9,
+      "timeline": 8,
+      "systemic": 8
+    },
+    "weightedScore": 8.4,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "NVIDIA",
+    "date": "Mar 16, 2026",
+    "title": "NVIDIA Vera Rubin platform launched at GTC 2026 with 7 new AI chips",
+    "summary": "NVIDIA unveiled the Vera Rubin platform featuring seven co-designed chips that deliver 10x lower inference costs and 5x higher revenue per gigawatt compared to Blackwell. The system enters production in H2 2026 with major cloud providers as launch partners.",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform",
+    "scores": {
+      "capability": 8,
+      "economic": 9,
       "irreversibility": 8,
-      "timeline": 7,
+      "timeline": 9,
+      "systemic": 7
+    },
+    "weightedScore": 8.3,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "Mar 21, 2026",
+    "title": "NVIDIA CEO Jensen Huang targets $1 trillion in orders by 2027",
+    "summary": "At GTC 2026, NVIDIA CEO Jensen Huang raised revenue projections to $1 trillion through 2027 for Blackwell and Vera Rubin chips, up from $500 billion. He called the AI agent ecosystem a $35 trillion market and physical AI a $50 trillion market.",
+    "url": "https://techcrunch.com/2026/03/21/why-wall-street-wasnt-won-over-by-nvidias-big-conference/",
+    "scores": {
+      "capability": 7,
+      "economic": 10,
+      "irreversibility": 7,
+      "timeline": 8,
       "systemic": 8
     },
     "weightedScore": 8.0,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "Fortune",
-    "date": "Mar 13, 2026",
-    "title": "Morgan Stanley warns an AI breakthrough is coming in 2026",
-    "summary": "Morgan Stanley warns that a transformative leap in AI is imminent in the first half of 2026, driven by unprecedented compute accumulation at top AI labs. OpenAI's GPT-5.4 'Thinking' model scored 83% on the GDPVal benchmark, at or above human expert levels on economically valuable tasks.",
-    "url": "https://fortune.com/2026/03/13/elon-musk-morgan-stanley-ai-leap-2026/",
-    "scores": {
-      "capability": 8,
-      "economic": 8,
-      "irreversibility": 7,
-      "timeline": 8,
-      "systemic": 7
-    },
-    "weightedScore": 7.8,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "Reuters",
-    "date": "Mar 21, 2026",
-    "title": "Pentagon to adopt Palantir AI as core US military system",
-    "summary": "Deputy Secretary of Defense Steve Feinberg announced that Palantir's Maven AI system will become an official program of record, locking in long-term use of its weapons-targeting technology across the U.S. military. The decision goes into effect by September 2026.",
-    "url": "https://www.denvergazette.com/2026/03/21/pentagon-to-adopt-palantir-ai-as-core-us-military-system/",
-    "scores": {
-      "capability": 7,
-      "economic": 6,
-      "irreversibility": 9,
-      "timeline": 6,
-      "systemic": 9
-    },
-    "weightedScore": 7.4,
-    "primaryDriver": "irreversibility"
-  },
-  {
-    "source": "MIT Technology Review",
-    "date": "Mar 13, 2026",
-    "title": "Why physical AI is becoming manufacturing's next advantage",
-    "summary": "Microsoft and NVIDIA are helping manufacturers leverage physical AI - intelligence that can sense, reason, and act in the real world. This represents a shift from isolated AI tools to intelligence operating reliably in physical environments, moving from experimentation to production at industrial scale.",
-    "url": "https://www.technologyreview.com/2026/03/13/1134184/why-physical-ai-is-becoming-manufacturings-next-advantage/",
-    "scores": {
-      "capability": 8,
-      "economic": 7,
-      "irreversibility": 6,
-      "timeline": 7,
-      "systemic": 6
-    },
-    "weightedScore": 6.9,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "Crescendo AI",
-    "date": "Mar 22, 2026",
-    "title": "Yann LeCun's AMI Labs raises $1.03 billion seed funding for world models",
-    "summary": "Advanced Machine Intelligence Labs, founded by Turing Award winner Yann LeCun, raised $1.03 billion in seed funding at a $3.5 billion valuation. The Paris-based startup is building 'world models,' an alternative AI architecture that learns by understanding how the physical world works.",
-    "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
-    "scores": {
-      "capability": 8,
-      "economic": 7,
-      "irreversibility": 7,
-      "timeline": 6,
-      "systemic": 6
-    },
-    "weightedScore": 6.9,
-    "primaryDriver": "capability"
+    "primaryDriver": "economic"
   },
   {
     "source": "Reuters",
     "date": "Mar 19, 2026",
-    "title": "Samsung Electronics plans over $73 billion investment to lead in AI chip sector",
-    "summary": "Samsung announced plans to invest more than $73 billion in 2026 to strengthen its position in the AI semiconductor market. The investment focuses on advanced chip manufacturing, including next-generation nodes critical for AI workloads.",
+    "title": "HSBC weighs 20,000 job cuts as AI overhaul accelerates",
+    "summary": "HSBC is reportedly considering job cuts affecting around 20,000 roles as part of a broader AI-driven transformation program. The restructuring reflects efforts to improve efficiency and automate processes using AI technologies.",
     "url": "https://medium.com/@stephen.stanley777/ai-daily-update-20-03-2026-97b868eef4f1",
     "scores": {
       "capability": 6,
       "economic": 8,
       "irreversibility": 7,
-      "timeline": 7,
-      "systemic": 6
+      "timeline": 8,
+      "systemic": 9
     },
-    "weightedScore": 6.8,
-    "primaryDriver": "economic"
+    "weightedScore": 7.6,
+    "primaryDriver": "systemic"
   },
   {
     "source": "Reuters",
     "date": "Mar 19, 2026",
-    "title": "HSBC weighs deep job cuts as AI overhaul unfolds",
-    "summary": "HSBC is reportedly considering job cuts affecting around 20,000 roles as part of a broader AI-driven transformation program. The restructuring reflects efforts to improve efficiency and automate processes using AI technologies.",
+    "title": "Samsung Electronics plans $73+ billion AI chip investment",
+    "summary": "Samsung announced plans to invest more than $73 billion in 2026 to strengthen its position in the AI semiconductor market, focusing on advanced chip manufacturing including next-generation nodes critical for AI workloads.",
     "url": "https://medium.com/@stephen.stanley777/ai-daily-update-20-03-2026-97b868eef4f1",
     "scores": {
-      "capability": 4,
+      "capability": 7,
       "economic": 8,
+      "irreversibility": 8,
+      "timeline": 8,
+      "systemic": 7
+    },
+    "weightedScore": 7.6,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "MIT Technology Review",
+    "date": "Mar 13, 2026",
+    "title": "Physical AI becoming manufacturing's next competitive advantage",
+    "summary": "Microsoft and NVIDIA are helping manufacturers leverage physical AI that can sense, reason, and act in the real world. The technology enables human-led, AI-operated systems where people set intent and intelligent systems execute at industrial scale.",
+    "url": "https://www.technologyreview.com/2026/03/13/1134184/why-physical-ai-is-becoming-manufacturings-next-advantage",
+    "scores": {
+      "capability": 8,
+      "economic": 7,
       "irreversibility": 7,
-      "timeline": 6,
-      "systemic": 8
+      "timeline": 7,
+      "systemic": 7
+    },
+    "weightedScore": 7.4,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "Mar 20, 2026",
+    "title": "AI startups consumed 41% of venture funding in 2025, returns looking good",
+    "summary": "AI startups accounted for 41% of the $128 billion in venture dollars raised by companies on Carta last year, a record-high annual share. This marks the highest concentration of VC funding into a single technology category in recent history.",
+    "url": "https://techcrunch.com/2026/03/20/ai-startups-are-eating-the-venture-industry-and-the-returns-so-far-are-good/",
+    "scores": {
+      "capability": 5,
+      "economic": 8,
+      "irreversibility": 6,
+      "timeline": 7,
+      "systemic": 7
     },
     "weightedScore": 6.6,
     "primaryDriver": "economic"
   },
   {
-    "source": "TechCrunch",
-    "date": "Mar 13, 2026",
-    "title": "The biggest AI stories of the year (so far)",
-    "summary": "Anthropic and the Pentagon reached a bitter stalemate over AI military contracts, with Anthropic establishing hard lines against mass surveillance and autonomous weapons. OpenAI then swooped in to announce a classified deployment agreement, leading to ChatGPT uninstalls jumping 295%.",
-    "url": "https://techcrunch.com/2026/03/13/the-biggest-ai-stories-of-the-year-so-far/",
+    "source": "US News",
+    "date": "Mar 20, 2026",
+    "title": "Trump releases national AI policy framework to pre-empt state rules",
+    "summary": "The White House unveiled an AI policy framework urging Congress to enact federal legislation that pre-empts state AI regulations. Trump previously threatened to withhold federal funding from states with restrictive AI laws deemed harmful to US dominance.",
+    "url": "https://www.usnews.com/news/world/articles/2026-03-20/white-house-releases-national-ai-framework",
     "scores": {
-      "capability": 5,
-      "economic": 6,
+      "capability": 4,
+      "economic": 7,
       "irreversibility": 8,
-      "timeline": 5,
+      "timeline": 6,
       "systemic": 8
     },
     "weightedScore": 6.4,
@@ -330,8 +346,8 @@
   {
     "source": "Fox Business",
     "date": "Mar 21, 2026",
-    "title": "Artificial intelligence helps unlock geothermal potential",
-    "summary": "AI is fueling the next wave of clean energy by making geothermal discovery more accurate. Zanskar says its AI models have made more geothermal discoveries in three years than the industry found in 30, targeting untapped U.S. energy sources.",
+    "title": "AI helps unlock geothermal energy potential with targeted drilling",
+    "summary": "Geothermal company Zanskar uses AI models to detect and target geothermal resources, making more discoveries in three years than the industry found in 30. AI helps pinpoint hot spots and reduces drilling risks in untapped US energy sources.",
     "url": "https://www.foxbusiness.com/politics/artificial-intelligence-helps-unlock-geothermal-potential",
     "scores": {
       "capability": 7,
@@ -344,99 +360,83 @@
     "primaryDriver": "capability"
   },
   {
-    "source": "TechCrunch",
-    "date": "Mar 21, 2026",
-    "title": "Are AI tokens the new signing bonus or just a cost of doing business?",
-    "summary": "Companies are adding AI tokens as a fourth component to engineering compensation, with top-quartile engineers potentially receiving $100,000 in compute tokens annually. Jensen Huang floated the concept at GTC 2026, sparking industry-wide adoption discussions.",
-    "url": "https://techcrunch.com/2026/03/21/are-ai-tokens-the-new-signing-bonus-or-just-a-cost-of-doing-business/",
+    "source": "Reuters",
+    "date": "Mar 19, 2026",
+    "title": "OpenAI to acquire Python toolmaker Astral to compete with Anthropic",
+    "summary": "OpenAI announced plans to acquire Python toolmaker Astral to strengthen its position in AI-powered coding tools. The acquisition integrates developer tooling into OpenAI's Codex ecosystem, reflecting intensifying competition in AI coding assistants.",
+    "url": "https://medium.com/@stephen.stanley777/ai-daily-update-21-03-2026-d3367b8209a0",
     "scores": {
-      "capability": 5,
-      "economic": 8,
+      "capability": 7,
+      "economic": 6,
       "irreversibility": 6,
-      "timeline": 5,
-      "systemic": 7
-    },
-    "weightedScore": 6.3,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "TechCrunch",
-    "date": "Mar 20, 2026",
-    "title": "The best AI investment might be in energy tech",
-    "summary": "Sightline Climate reports up to 50% of announced data center projects might be delayed due to power access issues. Of 190 GW worth of tracked data centers, only 5 GW are under construction. AI is expected to drive data center power consumption up 175% by 2030.",
-    "url": "https://techcrunch.com/2026/03/20/the-best-ai-investment-might-be-in-energy-tech/",
-    "scores": {
-      "capability": 4,
-      "economic": 8,
-      "irreversibility": 6,
-      "timeline": 6,
-      "systemic": 7
-    },
-    "weightedScore": 6.3,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "MarketingProfs",
-    "date": "Mar 20, 2026",
-    "title": "AI Update: Google rolls out Personal Intelligence to all US users",
-    "summary": "Google is rolling out its Personal Intelligence feature to all US users, allowing Gemini to draw on data from Gmail, Photos, and YouTube for context-aware responses. Previously limited to paid tiers, it now reaches free users across Search, Chrome, and the Gemini app.",
-    "url": "https://www.marketingprofs.com/opinions/2026/54448/ai-update-march-20-2026-ai-news-and-views-from-the-past-week",
-    "scores": {
-      "capability": 6,
-      "economic": 7,
-      "irreversibility": 6,
-      "timeline": 6,
-      "systemic": 6
-    },
-    "weightedScore": 6.2,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "TechCrunch",
-    "date": "Mar 20, 2026",
-    "title": "AI startups are eating the venture industry and the returns are good",
-    "summary": "AI startups accounted for 41% of the $128 billion in venture dollars raised by companies on Carta last year. Funds raised in 2023-2024 posted the highest internal rate of return compared to previous years, with Anthropic raising $30B at $380B valuation and xAI raising $20B.",
-    "url": "https://techcrunch.com/2026/03/20/ai-startups-are-eating-the-venture-industry-and-the-returns-so-far-are-good/",
-    "scores": {
-      "capability": 4,
-      "economic": 9,
-      "irreversibility": 6,
-      "timeline": 5,
-      "systemic": 6
-    },
-    "weightedScore": 6.1,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "Bloomberg",
-    "date": "Mar 21, 2026",
-    "title": "OpenAI Plans to Almost Double Its Headcount This Year",
-    "summary": "OpenAI plans to almost double its headcount by the end of 2026 as it seeks to fend off competition from companies such as Anthropic and Google. The rapid expansion signals intense competition in the AI space and massive scaling efforts.",
-    "url": "https://www.bloomberg.com/news/articles/2026-03-21/openai-plans-to-almost-double-its-headcount-this-year-ft-says",
-    "scores": {
-      "capability": 6,
-      "economic": 7,
-      "irreversibility": 5,
       "timeline": 7,
-      "systemic": 5
+      "systemic": 6
     },
-    "weightedScore": 6.0,
-    "primaryDriver": "economic"
+    "weightedScore": 6.4,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "TechCrunch",
+    "date": "Mar 7, 2026",
+    "title": "Pro-Human AI Declaration proposes framework for responsible AI development",
+    "summary": "A bipartisan coalition released the Pro-Human AI Declaration signed by hundreds of experts, offering a framework for responsible AI development. MIT physicist Max Tegmark noted that 95% of Americans oppose an unregulated race to superintelligence.",
+    "url": "https://techcrunch.com/2026/03/07/a-roadmap-for-ai-if-anyone-will-listen/",
+    "scores": {
+      "capability": 3,
+      "economic": 5,
+      "irreversibility": 8,
+      "timeline": 5,
+      "systemic": 8
+    },
+    "weightedScore": 5.8,
+    "primaryDriver": "irreversibility"
   },
   {
     "source": "Al Jazeera",
     "date": "Mar 20, 2026",
-    "title": "Three charged in the US with smuggling AI chips into China",
-    "summary": "Three people associated with Super Micro Computer, including its cofounder, were charged with smuggling at least $2.5 billion worth of US AI technology to China in violation of export laws. The scheme involved routing servers through Taiwan and Southeast Asia.",
+    "title": "Three charged with smuggling $2.5bn worth of AI chips to China",
+    "summary": "Three people associated with Super Micro Computer, including its cofounder, were charged with smuggling at least $2.5 billion worth of US AI technology to China in violation of export laws through a complex scheme involving Taiwan and Southeast Asia.",
     "url": "https://www.aljazeera.com/news/2026/3/20/three-charged-in-the-us-with-smuggling-ai-chips-into-china",
     "scores": {
       "capability": 3,
-      "economic": 7,
+      "economic": 6,
       "irreversibility": 7,
-      "timeline": 4,
+      "timeline": 5,
       "systemic": 8
     },
-    "weightedScore": 5.9,
+    "weightedScore": 5.7,
+    "primaryDriver": "systemic"
+  },
+  {
+    "source": "Medium",
+    "date": "Mar 18, 2026",
+    "title": "UK government considers labeling AI-generated content in copyright reforms",
+    "summary": "The UK government is considering new requirements to label AI-generated content as part of broader copyright reforms. The proposals aim to address concerns from creative industries about transparency and attribution in AI systems.",
+    "url": "https://medium.com/@stephen.stanley777/ai-daily-update-19-03-2026-0f5c30ddbede",
+    "scores": {
+      "capability": 4,
+      "economic": 5,
+      "irreversibility": 7,
+      "timeline": 5,
+      "systemic": 7
+    },
+    "weightedScore": 5.6,
+    "primaryDriver": "irreversibility"
+  },
+  {
+    "source": "MIT News",
+    "date": "Mar 20, 2026",
+    "title": "MIT symposium challenges scale-dependent AI development approach",
+    "summary": "Journalist Karen Hao and scholar Paola Ricaurte argued that massive scale AI development is unnecessary and urged shifting away from hyper-scale approaches. They emphasized human toll and environmental costs of current AI scaling trends.",
+    "url": "https://news.mit.edu/2026/right-path-for-ai-karen-hao-paola-ricaurte-0320",
+    "scores": {
+      "capability": 3,
+      "economic": 4,
+      "irreversibility": 6,
+      "timeline": 4,
+      "systemic": 7
+    },
+    "weightedScore": 4.7,
     "primaryDriver": "systemic"
   }
 ];
