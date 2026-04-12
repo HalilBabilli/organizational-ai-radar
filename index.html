@@ -115,7 +115,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>Organizational AI <span>Radar</span></h1>
-                        <p>News Ranked by Importance - Updated: April 11, 2026 at 06:50 UTC</p>
+                        <p>News Ranked by Importance - Updated: April 12, 2026 at 07:03 UTC</p>
                     </div>
                 </div>
             </div>
@@ -200,49 +200,113 @@
     <script>
         const newsData = [
   {
-    "source": "Bloomberg",
-    "date": "Apr 10, 2026",
-    "title": "US Officials Warn Banks Over Anthropic Mythos AI Cyber Risk",
-    "summary": "Treasury Secretary Scott Bessent and Fed Chair Powell held urgent meetings with bank CEOs about cybersecurity risks from Anthropic's new Mythos AI model. The model can autonomously identify and exploit vulnerabilities across major operating systems and browsers, prompting federal officials to ensure banks strengthen digital defenses.",
-    "url": "https://www.pymnts.com/cybersecurity/2026/feds-warn-major-banks-of-anthropic-mythos-cyber-threat/",
+    "source": "Mean CEO",
+    "date": "Apr 9, 2026",
+    "title": "GPT-5.4 scores 83% on GDPVal benchmark matching human experts",
+    "summary": "OpenAI's latest reasoning model achieved 83% on GDPVal testing real professional work across 44 occupations. Morgan Stanley warns of imminent AI breakthrough driven by unprecedented compute accumulation.",
+    "url": "https://blog.mean.ceo/new-ai-model-releases-news-april-2026/",
+    "scores": {
+      "capability": 9,
+      "economic": 8,
+      "irreversibility": 8,
+      "timeline": 8,
+      "systemic": 8
+    },
+    "weightedScore": 8.2,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "ScienceDaily",
+    "date": "Apr 5, 2026",
+    "title": "AI breakthrough cuts energy use by 100x while boosting accuracy",
+    "summary": "Tufts University researchers unveiled a neuro-symbolic AI approach that combines neural networks with symbolic reasoning. The system could slash AI energy consumption by up to 100 times while improving accuracy on complex tasks.",
+    "url": "https://www.sciencedaily.com/releases/2026/04/260405003952.htm",
+    "scores": {
+      "capability": 8,
+      "economic": 9,
+      "irreversibility": 7,
+      "timeline": 8,
+      "systemic": 8
+    },
+    "weightedScore": 8.0,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "ScienceDaily",
+    "date": "Apr 7, 2026",
+    "title": "New chip survives 1300\u00b0F and could change AI forever",
+    "summary": "USC engineers created a breakthrough memristor that operates at 700\u00b0C, performing AI matrix multiplication orders of magnitude faster with lower energy. Over 92% of AI computing relies on these operations.",
+    "url": "https://www.sciencedaily.com/releases/2026/04/260406192904.htm",
     "scores": {
       "capability": 9,
       "economic": 8,
       "irreversibility": 7,
-      "timeline": 6,
-      "systemic": 9
-    },
-    "weightedScore": 7.8,
-    "primaryDriver": "systemic"
-  },
-  {
-    "source": "CNBC",
-    "date": "Apr 8, 2026",
-    "title": "Meta debuts new AI model, attempting to catch Google, OpenAI after spending billions",
-    "summary": "Meta launched Muse Spark, its first major proprietary AI model from Meta Superintelligence Labs led by Alexandr Wang. The model scores 52 on Intelligence Index, ranking 4th behind GPT-5.4 and Claude Opus 4.6, marking Meta's shift from open-source to closed models.",
-    "url": "https://www.cnbc.com/2026/04/08/meta-debuts-first-major-ai-model-since-14-billion-deal-to-bring-in-alexandr-wang.html",
-    "scores": {
-      "capability": 7,
-      "economic": 9,
-      "irreversibility": 8,
       "timeline": 7,
       "systemic": 6
     },
-    "weightedScore": 7.5,
-    "primaryDriver": "economic"
+    "weightedScore": 7.8,
+    "primaryDriver": "capability"
   },
   {
-    "source": "Crescendo AI",
+    "source": "devFlokers",
+    "date": "Apr 3, 2026",
+    "title": "Anthropic drops 10-trillion parameter Claude Mythos 5",
+    "summary": "Anthropic released Claude Mythos 5 with 10 trillion parameters, marking a shift to systemic industrialization of AI. The model focuses on advanced cybersecurity and coding capabilities with unprecedented performance.",
+    "url": "https://www.devflokers.com/blog/ai-news-last-24-hours-april-2026-model-releases-breakthroughs",
+    "scores": {
+      "capability": 9,
+      "economic": 7,
+      "irreversibility": 8,
+      "timeline": 7,
+      "systemic": 7
+    },
+    "weightedScore": 7.8,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "Nature",
     "date": "Apr 9, 2026",
-    "title": "Google unveils TurboQuant at ICLR 2026 - 6x AI memory compression breakthrough",
-    "summary": "Google's research team unveiled TurboQuant algorithm that reduces memory overhead of AI models by 6x using PolarQuant vector rotation and Quantized Johnson-Lindenstrauss compression. The breakthrough could accelerate shift from parameter scaling to efficiency-first AI development.",
-    "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+    "title": "Breakthrough computer-chip tech could help meet AI's 'monumental demand'",
+    "summary": "Scientists developed revolutionary EUV lithography technology using giant mirrors to create smaller transistors. The $400 million machines could enable AI data centers to run more computations without increasing electricity usage.",
+    "url": "https://www.nature.com/articles/d41586-026-01050-5",
     "scores": {
       "capability": 8,
       "economic": 7,
+      "irreversibility": 8,
+      "timeline": 6,
+      "systemic": 7
+    },
+    "weightedScore": 7.4,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "Crescendo AI",
+    "date": "Apr 10, 2026",
+    "title": "Google unveils TurboQuant algorithm reducing AI memory overhead 6x",
+    "summary": "Google's ICLR 2026 breakthrough addresses KV cache bottlenecks using PolarQuant rotation and Quantized Johnson-Lindenstrauss compression. Could accelerate shift from parameter scaling to efficiency-first AI development.",
+    "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+    "scores": {
+      "capability": 7,
+      "economic": 8,
       "irreversibility": 7,
       "timeline": 8,
       "systemic": 6
+    },
+    "weightedScore": 7.4,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Switas Consultancy",
+    "date": "Apr 8, 2026",
+    "title": "Physics-informed AI breakthrough forces models to adhere to natural laws",
+    "summary": "Researchers developed algorithms embedding physical constraints into neural networks for scientific discovery. Breakthrough provides accurate predictions in fluid dynamics, climate modeling, and material science.",
+    "url": "https://www.switas.com/articles/the-future-of-ai-7-breakthrough-trends-redefining-2026",
+    "scores": {
+      "capability": 8,
+      "economic": 6,
+      "irreversibility": 8,
+      "timeline": 7,
+      "systemic": 8
     },
     "weightedScore": 7.4,
     "primaryDriver": "capability"
@@ -250,194 +314,130 @@
   {
     "source": "CNBC",
     "date": "Apr 8, 2026",
-    "title": "OpenAI will allocate IPO shares to retail investors as it preps for debut, CFO says",
-    "summary": "OpenAI CFO Sarah Friar confirmed the company will reserve shares for retail investors in its upcoming IPO. Enterprise revenue now represents 40% of company revenue and is projected to equal consumer revenue by end of 2026, with Codex reaching 3 million users.",
-    "url": "https://www.cnbc.com/2026/04/08/openai-ipo-sarah-friar-retail-investors.html",
-    "scores": {
-      "capability": 5,
-      "economic": 9,
-      "irreversibility": 8,
-      "timeline": 7,
-      "systemic": 7
-    },
-    "weightedScore": 7.2,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "Crescendo AI",
-    "date": "Apr 8, 2026",
-    "title": "NVIDIA GTC 2026 highlights agentic AI frameworks for enterprise deployment",
-    "summary": "NVIDIA's GTC 2026 was dominated by agentic AI frameworks, particularly NeMoCLAW and OpenCLAW orchestration tools. Fortune 500 companies announced production agentic deployments across manufacturing, logistics, and finance, marking shift from experimental to core infrastructure.",
-    "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+    "title": "Meta debuts new AI model Muse Spark after $14 billion Scale AI acquisition",
+    "summary": "Meta released its first major AI model since hiring Scale AI's Alexandr Wang for $14.3 billion. Muse Spark features advanced reasoning capabilities and will compete with frontier models from OpenAI and Google.",
+    "url": "https://www.cnbc.com/2026/04/08/meta-debuts-first-major-ai-model-since-14-billion-deal-to-bring-in-alexandr-wang.html",
     "scores": {
       "capability": 7,
       "economic": 8,
-      "irreversibility": 7,
-      "timeline": 7,
-      "systemic": 7
-    },
-    "weightedScore": 7.2,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "MIT Technology Review",
-    "date": "Apr 6, 2026",
-    "title": "The one piece of data that could actually shed light on your job and AI",
-    "summary": "Analysis reveals AI's impact on jobs may be gradual rather than sudden, with researchers calling for a 'Manhattan Project' to understand employment effects. Anthropic's CEO predicts AI could be a general labor substitute for humans within five years.",
-    "url": "https://www.technologyreview.com/2026/04/06/1135187/the-one-piece-of-data-that-could-actually-shed-light-on-your-job-and-ai/",
-    "scores": {
-      "capability": 6,
-      "economic": 8,
       "irreversibility": 6,
-      "timeline": 7,
-      "systemic": 8
-    },
-    "weightedScore": 6.9,
-    "primaryDriver": "systemic"
-  },
-  {
-    "source": "Bloomberg",
-    "date": "Apr 7, 2026",
-    "title": "Intel Joins Musk's Terafab Project With Tesla, SpaceX, xAI",
-    "summary": "Intel announced plans to join Elon Musk's Terafab project alongside Tesla, SpaceX, and xAI. Broadcom and Google also expanded agreements with Anthropic to power the AI startup's growing operations, indicating major infrastructure partnerships forming.",
-    "url": "https://www.bloomberg.com/news/videos/2026-04-07/bloomberg-tech-4-7-2026-video",
-    "scores": {
-      "capability": 6,
-      "economic": 8,
-      "irreversibility": 7,
       "timeline": 7,
       "systemic": 6
     },
-    "weightedScore": 6.9,
+    "weightedScore": 7.1,
     "primaryDriver": "economic"
   },
   {
     "source": "Crescendo AI",
-    "date": "Apr 10, 2026",
-    "title": "Vistra Corp acquires $4B gas power plants to meet AI data center energy demands",
-    "summary": "Vistra Corp reached $4 billion agreement to acquire massive fleet of gas-fired power plants to address soaring energy needs of AI sector. The move positions Vistra as critical infrastructure provider for 24/7 operational stability as AI expansion pressures national power grid.",
+    "date": "Apr 8, 2026",
+    "title": "OpenAI surpasses $25 billion revenue, eyes 2026 IPO",
+    "summary": "OpenAI reached $25 billion annualized revenue with Anthropic approaching $19 billion. Market signals fastest-growing tech sector with potential late 2026 public listing for OpenAI.",
     "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
     "scores": {
       "capability": 5,
-      "economic": 8,
-      "irreversibility": 7,
-      "timeline": 6,
-      "systemic": 8
-    },
-    "weightedScore": 6.9,
-    "primaryDriver": "systemic"
-  },
-  {
-    "source": "Gizmodo",
-    "date": "Apr 11, 2026",
-    "title": "SpaceX, Anthropic, OpenAI eye major IPOs in 2026 - potential AI bubble test",
-    "summary": "Three tech giants SpaceX, Anthropic, and OpenAI are reportedly planning market debuts this year, potentially the biggest IPOs ever. OpenAI planning $1 trillion IPO as early as late 2026, which could test whether AI valuations represent a bubble.",
-    "url": "https://gizmodo.com/2026-is-poised-to-be-the-year-of-the-tech-ipo-will-it-also-be-the-year-the-ai-bubble-bursts-2000704395",
-    "scores": {
-      "capability": 4,
       "economic": 9,
       "irreversibility": 7,
-      "timeline": 6,
-      "systemic": 8
-    },
-    "weightedScore": 6.9,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "Crescendo AI",
-    "date": "Apr 7, 2026",
-    "title": "Anthropic's Model Context Protocol crosses 97 million installs",
-    "summary": "Anthropic's Model Context Protocol reached 97 million installs in March 2026, transitioning from experimental standard to foundational infrastructure for AI agents. Every major AI provider now ships MCP-compatible tooling as the default mechanism for agent connectivity.",
-    "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
-    "scores": {
-      "capability": 6,
-      "economic": 7,
-      "irreversibility": 8,
-      "timeline": 6,
+      "timeline": 7,
       "systemic": 7
     },
-    "weightedScore": 6.8,
-    "primaryDriver": "irreversibility"
+    "weightedScore": 7.0,
+    "primaryDriver": "economic"
   },
   {
     "source": "MIT Technology Review",
     "date": "Apr 8, 2026",
-    "title": "Mustafa Suleyman: AI development won't hit a wall anytime soon\u2014here's why",
-    "summary": "Microsoft AI CEO Mustafa Suleyman explains why AI development will continue advancing rapidly. He emphasizes that the compute explosion is the technological story of our time and is still only just beginning, contradicting predictions of AI progress plateauing.",
-    "url": "https://www.technologyreview.com/2026/04/08/1135398/mustafa-suleyman-ai-future/",
+    "title": "Mustafa Suleyman: AI development won't hit a wall anytime soon",
+    "summary": "Microsoft AI CEO argues the compute explosion driving AI is still beginning. Three advances enable exponential progress: faster calculators, high-bandwidth memory, and technologies turning GPUs into supercomputers.",
+    "url": "https://www.technologyreview.com/2026/04/08/1135398/mustafa-suleyman-ai-future",
     "scores": {
       "capability": 6,
       "economic": 7,
       "irreversibility": 6,
       "timeline": 8,
-      "systemic": 6
+      "systemic": 7
     },
-    "weightedScore": 6.6,
-    "primaryDriver": "timeline"
+    "weightedScore": 6.8,
+    "primaryDriver": "economic"
   },
   {
-    "source": "ScienceDaily",
-    "date": "Apr 10, 2026",
-    "title": "New chip design could make data centers 100x more energy efficient",
-    "summary": "UC San Diego researchers developed a new chip design combining vibrating piezoelectric components with clever circuit layouts that could make data centers far more energy-efficient for GPU power conversion, potentially reducing AI's massive energy consumption.",
-    "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
+    "source": "Bloomberg",
+    "date": "Apr 11, 2026",
+    "title": "Bank of Canada meets with lenders on Anthropic's Mythos AI cybersecurity risks",
+    "summary": "Canadian financial regulators held emergency meetings to discuss cybersecurity threats posed by Anthropic's latest AI model. The meeting signals growing regulatory concern over advanced AI capabilities.",
+    "url": "https://www.bloomberg.com/news/articles/2026-04-10/bank-of-canada-major-lenders-meet-on-anthropic-ai-cyber-risk",
     "scores": {
       "capability": 6,
+      "economic": 6,
+      "irreversibility": 7,
+      "timeline": 6,
+      "systemic": 9
+    },
+    "weightedScore": 6.6,
+    "primaryDriver": "systemic"
+  },
+  {
+    "source": "Fortune",
+    "date": "Apr 7, 2026",
+    "title": "Wall Street analysts say AI trade deflated but opportunity is just starting",
+    "summary": "Despite methodical wind-down of AI investment euphoria, tech earnings continue growing 44% in Q1 2026. AI infrastructure investment accounts for 40% of S&P 500 earnings growth this year.",
+    "url": "https://fortune.com/2026/04/07/the-ai-trade-is-over-top-wall-street-analysts-say-the-ai-opportunity-might-be-just-starting/",
+    "scores": {
+      "capability": 4,
+      "economic": 9,
+      "irreversibility": 5,
+      "timeline": 6,
+      "systemic": 8
+    },
+    "weightedScore": 6.4,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "BNN Bloomberg",
+    "date": "Apr 9, 2026",
+    "title": "Amazon AI services hit $15 billion annualized revenue",
+    "summary": "Amazon Web Services AI division reaches $15 billion in annualized revenue for first time. CEO Andy Jassy reveals financial performance of cloud AI business backed by billions in investment.",
+    "url": "https://www.bnnbloomberg.ca/latest/",
+    "scores": {
+      "capability": 5,
+      "economic": 8,
+      "irreversibility": 6,
+      "timeline": 6,
+      "systemic": 6
+    },
+    "weightedScore": 6.4,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "MIT Technology Review",
+    "date": "Apr 9, 2026",
+    "title": "MIT Technology Review announces EmTech AI 2026 conference on 'Great Integration'",
+    "summary": "The flagship AI conference focuses on embedding AI into core business infrastructure. Features discussions on the evolving AI stack, agentic systems, and coordinated super-intelligent ecosystems.",
+    "url": "https://www.prnewswire.com/news-releases/mit-technology-reviews-emtech-ai-2026-leading-in-the-era-of-ai-integration-302737090.html",
+    "scores": {
+      "capability": 5,
       "economic": 7,
       "irreversibility": 6,
       "timeline": 6,
       "systemic": 7
     },
-    "weightedScore": 6.4,
-    "primaryDriver": "systemic"
+    "weightedScore": 6.2,
+    "primaryDriver": "economic"
   },
   {
-    "source": "MIT News",
-    "date": "Apr 6, 2026",
-    "title": "MIT research finds AI's labor market impact resembles 'rising tide' rather than sudden waves",
-    "summary": "New MIT FutureTech working paper shows AI's march through labor markets looks like a slow, rising flood rather than sudden catastrophe. Research suggests widespread gains across many tasks simultaneously rather than transforming specific task sets at once.",
-    "url": "https://news.mit.edu/topic/artificial-intelligence2?type=2",
+    "source": "CNBC",
+    "date": "Apr 10, 2026",
+    "title": "Lumentum shares jump 5% on AI buildout demand through 2027",
+    "summary": "Optical and photonic companies see massive demand from AI infrastructure. Lumentum CEO reports products fully booked through 2027 amid artificial intelligence hardware expansion.",
+    "url": "https://www.cnbc.com/2026/04/09/stock-market-today-live-updates.html",
     "scores": {
-      "capability": 5,
-      "economic": 7,
+      "capability": 4,
+      "economic": 8,
       "irreversibility": 5,
-      "timeline": 6,
-      "systemic": 8
-    },
-    "weightedScore": 6.3,
-    "primaryDriver": "systemic"
-  },
-  {
-    "source": "ScienceDaily",
-    "date": "Apr 7, 2026",
-    "title": "New chip survives 1300\u00b0F and could change AI forever",
-    "summary": "Engineers created a breakthrough memory device that works at temperatures hotter than molten lava, shattering electronics limits. Built from ultra-durable materials, the component could enable AI systems to operate in extreme environments previously impossible.",
-    "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
-    "scores": {
-      "capability": 7,
-      "economic": 6,
-      "irreversibility": 7,
-      "timeline": 5,
+      "timeline": 7,
       "systemic": 6
     },
-    "weightedScore": 6.3,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "Understanding AI",
-    "date": "Apr 9, 2026",
-    "title": "AI predictions for 2026: No catastrophe expected, continued gradual progress",
-    "summary": "Comprehensive AI predictions suggest no major AI catastrophe in 2026, with models continuing to improve capabilities gradually. Experts predict context windows will remain stable, GDP growth won't exceed 3.5% despite AI advances, challenging fast takeoff scenarios.",
-    "url": "https://www.understandingai.org/p/17-predictions-for-ai-in-2026",
-    "scores": {
-      "capability": 5,
-      "economic": 6,
-      "irreversibility": 5,
-      "timeline": 6,
-      "systemic": 7
-    },
-    "weightedScore": 5.8,
-    "primaryDriver": "systemic"
+    "weightedScore": 6.2,
+    "primaryDriver": "economic"
   }
 ];
 
