@@ -115,7 +115,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>Organizational AI <span>Radar</span></h1>
-                        <p>News Ranked by Importance - Updated: April 21, 2026 at 07:22 UTC</p>
+                        <p>News Ranked by Importance - Updated: April 22, 2026 at 07:20 UTC</p>
                     </div>
                 </div>
             </div>
@@ -200,95 +200,127 @@
     <script>
         const newsData = [
   {
-    "source": "TechCrunch",
-    "date": "Apr 20, 2026",
-    "title": "OpenAI Unveils GPT-5.4 with 1M Token Context and Autonomous Workflows",
-    "summary": "OpenAI released GPT-5.4 featuring a 1-million-token context window and ability to autonomously execute multi-step workflows across software environments. The model scored 75% on OSWorld-V benchmark, exceeding human baseline of 72.4% on desktop productivity tasks.",
-    "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+    "source": "Bloomberg",
+    "date": "Apr 21, 2026",
+    "title": "Financial Stability Board Assesses Anthropic's Mythos Model Cybersecurity Risks",
+    "summary": "The FSB is gathering information about potential risks from Anthropic's Mythos model, particularly autonomous cyber attack capabilities. Officials discussed concerns at IMF meetings amid worries that non-US financial systems have limited access to assess the model.",
+    "url": "https://www.bloomberg.com/news/videos/2026-04-17/financial-watchdog-to-share-insight-on-anthropic-ai-video",
     "scores": {
-      "capability": 10,
-      "economic": 8,
-      "irreversibility": 8,
-      "timeline": 9,
-      "systemic": 7
+      "capability": 8,
+      "economic": 7,
+      "irreversibility": 9,
+      "timeline": 6,
+      "systemic": 9
     },
-    "weightedScore": 8.7,
-    "primaryDriver": "capability"
+    "weightedScore": 7.9,
+    "primaryDriver": "irreversibility"
   },
   {
-    "source": "Nature",
-    "date": "Apr 20, 2026",
-    "title": "Nature Publishes First Peer-Reviewed Study on AI Scientist System",
-    "summary": "Nature published details of The AI Scientist, the first AI system to automate the entire research lifecycle from idea generation to manuscript writing. An AI-generated paper passed peer review for a top-tier ML conference workshop, marking a historic milestone in automated science.",
-    "url": "https://www.nature.com/articles/s41586-026-10265-5",
+    "source": "ScienceDaily",
+    "date": "Apr 18, 2026",
+    "title": "Artificial Neurons Successfully Communicate with Living Brain Cells",
+    "summary": "Northwestern University engineers printed artificial neurons that can communicate with real brain cells. These flexible, low-cost devices generate lifelike electrical patterns, representing a breakthrough in brain-machine interfaces.",
+    "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
     "scores": {
       "capability": 9,
       "economic": 6,
-      "irreversibility": 9,
-      "timeline": 8,
+      "irreversibility": 8,
+      "timeline": 5,
       "systemic": 9
     },
-    "weightedScore": 8.2,
+    "weightedScore": 7.5,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "IEEE Spectrum",
+    "date": "Apr 14, 2026",
+    "title": "Stanford AI Index 2026 Shows Continued Model Improvement Despite Predictions",
+    "summary": "Despite predictions that AI development may hit a wall, Stanford's 2026 AI Index shows top models keep getting better. People are adopting AI faster than personal computers or internet, while companies spend hundreds of billions on infrastructure.",
+    "url": "https://spectrum.ieee.org/state-of-ai-index-2026",
+    "scores": {
+      "capability": 7,
+      "economic": 8,
+      "irreversibility": 6,
+      "timeline": 8,
+      "systemic": 7
+    },
+    "weightedScore": 7.2,
+    "primaryDriver": "timeline"
+  },
+  {
+    "source": "MIT Technology Review",
+    "date": "Apr 21, 2026",
+    "title": "AI Agents Moving From Solo to Team-Based Cooperation",
+    "summary": "The first wave of AI agents could only act alone but coming next are teams of agents that cooperate to achieve far more complex goals. This represents a shift toward more sophisticated multi-agent workflows.",
+    "url": "https://www.technologyreview.com/2026/04/21/1135643/10-ai-artificial-intelligence-trends-technologies-research-2026/",
+    "scores": {
+      "capability": 8,
+      "economic": 6,
+      "irreversibility": 7,
+      "timeline": 8,
+      "systemic": 6
+    },
+    "weightedScore": 7.1,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "Anthropic",
+    "date": "Apr 21, 2026",
+    "title": "Anthropic Secures 5 Gigawatts of Compute with Amazon Partnership",
+    "summary": "Anthropic announced expanded collaboration with Amazon to secure up to 5 gigawatts of compute for training Claude. Capacity begins this quarter with nearly 1 gigawatt expected by end of 2026, supporting massive scale-up.",
+    "url": "https://www.cryptointegrat.com/p/ai-news-april-21-2026",
+    "scores": {
+      "capability": 7,
+      "economic": 8,
+      "irreversibility": 6,
+      "timeline": 8,
+      "systemic": 6
+    },
+    "weightedScore": 7.0,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "TechCrunch via Crescendo AI",
+    "date": "Apr 15, 2026",
+    "title": "US Air Force Successfully Deploys AI-Powered WarMatrix Wargaming",
+    "summary": "US Air Force announced successful inaugural operational use of WarMatrix, its AI-powered wargaming environment, at the GE 26 Benchmark Wargame. This marks military adoption of AI for strategic planning and simulation.",
+    "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+    "scores": {
+      "capability": 7,
+      "economic": 6,
+      "irreversibility": 8,
+      "timeline": 6,
+      "systemic": 8
+    },
+    "weightedScore": 7.0,
     "primaryDriver": "irreversibility"
   },
   {
     "source": "MIT Technology Review",
     "date": "Apr 21, 2026",
-    "title": "Stanford's 2026 AI Index: AI Is Sprinting, We're Struggling to Keep Up",
-    "summary": "Stanford's annual AI report shows top models continue improving despite predictions of hitting a wall. AI companies are spending hundreds of billions on data centers while generating revenue faster than any previous tech boom, but benchmarks and policies struggle to keep pace.",
-    "url": "https://www.technologyreview.com/2026/04/13/1135675/want-to-understand-the-current-state-of-ai-check-out-these-charts/",
-    "scores": {
-      "capability": 8,
-      "economic": 9,
-      "irreversibility": 6,
-      "timeline": 9,
-      "systemic": 7
-    },
-    "weightedScore": 7.9,
-    "primaryDriver": "timeline"
-  },
-  {
-    "source": "VentureBeat",
-    "date": "Apr 20, 2026",
-    "title": "Anthropic Hits $30B Revenue, Eyes October IPO",
-    "summary": "Anthropic surpassed $30 billion in annualized revenue by early April 2026, up from $9 billion at end of 2025. The company is in early talks with Goldman Sachs, JPMorgan, and Morgan Stanley about a potential IPO as early as October 2026.",
-    "url": "https://venturebeat.com/category/ai",
-    "scores": {
-      "capability": 6,
-      "economic": 10,
-      "irreversibility": 7,
-      "timeline": 6,
-      "systemic": 6
-    },
-    "weightedScore": 7.1,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "Reuters",
-    "date": "Apr 19, 2026",
-    "title": "McKinsey Introduces AI Interviews for Graduate Recruitment",
-    "summary": "McKinsey & Co. now requires candidates to collaborate with its internal AI tool 'Lilli' during final-round assessments. The firm revealed it utilizes 20,000 AI agents alongside 40,000 human employees, marking AI competence as core requirement for top-tier consulting roles.",
-    "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+    "title": "Military AI Systems Now Using Conversational AI for Battlefield Advice",
+    "summary": "Iran conflict showcases new use of large language models for military decision-making beyond traditional AI surveillance. These systems are built on LLMs and reshaping how militaries share intelligence and make life-and-death decisions.",
+    "url": "https://www.technologyreview.com/2026/04/21/1135667/new-war-room-military-ai-artificial-intelligence/",
     "scores": {
       "capability": 7,
-      "economic": 7,
-      "irreversibility": 6,
-      "timeline": 7,
+      "economic": 6,
+      "irreversibility": 8,
+      "timeline": 5,
       "systemic": 8
     },
-    "weightedScore": 7.0,
-    "primaryDriver": "systemic"
+    "weightedScore": 6.9,
+    "primaryDriver": "irreversibility"
   },
   {
-    "source": "Bloomberg",
+    "source": "Anthropic",
     "date": "Apr 19, 2026",
-    "title": "TSMC Raises 2026 Outlook in Sign of Confidence in AI Demand",
-    "summary": "Taiwan Semiconductor Manufacturing Co. raised its revenue outlook for 2026, demonstrating resilience of AI chip demand despite concerns about economic fallout from Middle Eastern conflict. The move signals continued confidence in AI infrastructure investments.",
-    "url": "https://www.bloomberg.com/news/articles/2026-04-16/tsmc-s-profit-beats-estimates-after-war-failed-to-dent-ai-demand",
+    "title": "Anthropic Revenue Surpasses $30 Billion Run-Rate",
+    "summary": "Claude demand accelerated dramatically with run-rate revenue reaching $30 billion, up from $9 billion at end of 2025. Over 1,000 business customers now spend $1M+ annually, doubling in under two months.",
+    "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
     "scores": {
-      "capability": 6,
+      "capability": 5,
       "economic": 9,
-      "irreversibility": 5,
+      "irreversibility": 7,
       "timeline": 7,
       "systemic": 6
     },
@@ -296,147 +328,115 @@
     "primaryDriver": "economic"
   },
   {
-    "source": "TechCrunch",
-    "date": "Apr 19, 2026",
-    "title": "Cadence-NVIDIA Partnership Targets Sim-to-Real Gap in Robotics",
-    "summary": "Cadence Design Systems and NVIDIA announced expanded partnership combining multiphysics simulation engines with Isaac robotics libraries and Cosmos open-world models. The collaboration aims to close the persistent 'sim-to-real' gap affecting robot performance in physical environments.",
+    "source": "CNBC",
+    "date": "Apr 21, 2026",
+    "title": "Bezos AI Lab Nears Completion of $10B Funding Round",
+    "summary": "Jeff Bezos-backed AI laboratory is reportedly close to completing a massive $10 billion funding round, signaling continued massive private investment in AI infrastructure and development.",
+    "url": "https://www.cnbc.com/video/2026/04/21/bezos-ai-lab-nears-completion-of-10b-funding-round-report.html",
+    "scores": {
+      "capability": 6,
+      "economic": 9,
+      "irreversibility": 6,
+      "timeline": 6,
+      "systemic": 7
+    },
+    "weightedScore": 6.8,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Reuters via Crescendo AI",
+    "date": "Apr 15, 2026",
+    "title": "Snap Lays Off 1,000 Employees Citing AI Efficiency Gains",
+    "summary": "Snap CEO announced layoffs of approximately 1,000 employees, citing rapid AI advancements that allow smaller teams to achieve the same output. AI now generates over 65% of Snap's new code, delivering $500M in cost savings.",
     "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
     "scores": {
+      "capability": 6,
+      "economic": 8,
+      "irreversibility": 6,
+      "timeline": 7,
+      "systemic": 7
+    },
+    "weightedScore": 6.8,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "ScienceDaily",
+    "date": "Apr 17, 2026",
+    "title": "Quantum AI Dramatically Improves Chaos Prediction",
+    "summary": "Researchers demonstrated that blending quantum computing with AI dramatically improves predictions of complex chaotic systems. Quantum computers identify hidden patterns, making AI more accurate and stable over time.",
+    "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
+    "scores": {
       "capability": 8,
+      "economic": 5,
+      "irreversibility": 7,
+      "timeline": 6,
+      "systemic": 7
+    },
+    "weightedScore": 6.6,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "Cadence Design Systems",
+    "date": "Apr 15, 2026",
+    "title": "Cadence-NVIDIA Partnership Targets Sim-to-Real Gap in Robotics",
+    "summary": "Expanded partnership combines Cadence simulation engines with NVIDIA's Isaac robotics libraries to close the persistent sim-to-real gap. The workflow spans world-model training, physics simulation, and real-world deployment feedback.",
+    "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+    "scores": {
+      "capability": 7,
       "economic": 6,
       "irreversibility": 6,
       "timeline": 7,
       "systemic": 6
     },
-    "weightedScore": 6.8,
+    "weightedScore": 6.5,
     "primaryDriver": "capability"
   },
   {
-    "source": "CNBC",
+    "source": "MIT Technology Review",
     "date": "Apr 20, 2026",
-    "title": "Dell Stock Soars on AI Server Demand, DOJ Charges Rival Supermicro",
-    "summary": "Melius Research raised Dell's target to $245 from $200, citing growing AI server demand and Dell's expected market share gains after competitor Supermicro's co-founder was charged with conspiring to smuggle AI technology to China. Computing power deemed critical to national security.",
-    "url": "https://www.cnbc.com/2026/04/19/stock-market-today-live-updates.html",
+    "title": "Chinese Tech Workers Training AI Doubles of Colleagues",
+    "summary": "Viral GitHub project 'Colleague Skill' allows workers to clone coworkers into reusable AI, forcing confrontation with deeper fears about AI replacing human workers and workplace dignity in the age of automation.",
+    "url": "https://www.technologyreview.com/2026/04/20/1136149/chinese-tech-workers-ai-colleagues/",
     "scores": {
-      "capability": 5,
-      "economic": 8,
-      "irreversibility": 6,
-      "timeline": 6,
-      "systemic": 8
-    },
-    "weightedScore": 6.6,
-    "primaryDriver": "systemic"
-  },
-  {
-    "source": "Wired",
-    "date": "Apr 19, 2026",
-    "title": "PwC Study: 20% of Companies Capture 75% of AI's Economic Gains",
-    "summary": "PwC's 2026 AI Performance study reveals a small group of leading companies is pulling ahead in generating real financial returns from AI, with three-quarters of AI's economic benefits captured by just 20% of companies focused on growth rather than productivity.",
-    "url": "https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-performance-study.html",
-    "scores": {
-      "capability": 5,
-      "economic": 9,
-      "irreversibility": 6,
-      "timeline": 5,
+      "capability": 6,
+      "economic": 7,
+      "irreversibility": 5,
+      "timeline": 4,
       "systemic": 7
     },
-    "weightedScore": 6.6,
+    "weightedScore": 6.0,
     "primaryDriver": "economic"
   },
   {
     "source": "MIT Technology Review",
     "date": "Apr 21, 2026",
-    "title": "10 Things That Matter in AI Right Now - MIT's Annual AI Outlook",
-    "summary": "MIT Technology Review unveiled its first-ever list focused entirely on AI, highlighting 10 critical developments including AI companions, mechanistic interpretability, generative coding, and hyperscale data centers. The list reflects how AI has become the defining technological theme of 2026.",
-    "url": "https://www.technologyreview.com/2026/04/14/1135298/coming-soon-10-things-that-matter-in-ai-right-now/",
+    "title": "Populist Backlash Building Against AI Deployment",
+    "summary": "People from all walks of life are speaking out against rising electricity bills from data centers, disappearing jobs, chatbots' impact on teen mental health, and copyright infringement. This represents growing resistance to AI company visions for the future.",
+    "url": "https://www.technologyreview.com/2026/04/21/1135665/resistance-ai-artificial-intelligence-backlash-protests/",
     "scores": {
-      "capability": 7,
-      "economic": 6,
-      "irreversibility": 5,
-      "timeline": 8,
-      "systemic": 6
-    },
-    "weightedScore": 6.4,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "CNBC",
-    "date": "Apr 19, 2026",
-    "title": "Snap Cuts 1,000 Jobs, Cites AI Efficiency Gains",
-    "summary": "Snap CEO Evan Spiegel announced layoffs of approximately 1,000 employees and closure of 300+ open roles, citing 'rapid advancements in artificial intelligence' that allow smaller teams to achieve the same output. Total reduction represents roughly a quarter of planned headcount.",
-    "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
-    "scores": {
-      "capability": 6,
+      "capability": 2,
       "economic": 7,
-      "irreversibility": 5,
-      "timeline": 6,
-      "systemic": 8
-    },
-    "weightedScore": 6.4,
-    "primaryDriver": "systemic"
-  },
-  {
-    "source": "CNBC",
-    "date": "Apr 19, 2026",
-    "title": "Robot Beats Human Half-Marathon World Record",
-    "summary": "A robot exceeded the half-marathon world record previously set by Ugandan runner Jacob Kiplimo, demonstrating significant advances in AI-powered robotics and autonomous movement systems. The achievement highlights rapid progress in physical AI capabilities.",
-    "url": "https://www.cnbc.com/ai-artificial-intelligence/",
-    "scores": {
-      "capability": 8,
-      "economic": 4,
       "irreversibility": 6,
       "timeline": 7,
-      "systemic": 5
+      "systemic": 8
     },
-    "weightedScore": 6.3,
-    "primaryDriver": "capability"
+    "weightedScore": 5.8,
+    "primaryDriver": "economic"
   },
   {
-    "source": "Financial Times",
-    "date": "Apr 19, 2026",
-    "title": "xAI Releases Grok 4.20 with Enhanced Real-Time Accuracy",
-    "summary": "xAI released Grok 4.20, focusing on closing factuality gaps in current-events queries. Deeply integrated with X's real-time data stream, it scored highest among March frontier model releases on benchmarks measuring accuracy for news and events within 30 days.",
+    "source": "Crescendo AI",
+    "date": "Apr 14, 2026",
+    "title": "Nebraska Supreme Court Suspends Lawyer for AI Citation Hallucinations",
+    "summary": "Omaha attorney suspended after appellate brief contained 57 defective citations including 20 AI hallucinations. Part of growing wave of legal sanctions, with US courts imposing $145,000 in sanctions for AI citation errors in Q1 2026 alone.",
     "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
     "scores": {
-      "capability": 7,
-      "economic": 6,
-      "irreversibility": 4,
-      "timeline": 6,
-      "systemic": 5
-    },
-    "weightedScore": 5.9,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "Ars Technica",
-    "date": "Apr 19, 2026",
-    "title": "Ars Technica Fires Senior AI Reporter Over Fabricated Quotes",
-    "summary": "Ars Technica fired senior AI reporter Benj Edwards and retracted an article containing AI-generated quotes falsely attributed to a software maintainer. The incident highlights growing concerns about AI hallucinations in journalism and the need for verification protocols.",
-    "url": "https://en.wikipedia.org/wiki/Ars_Technica",
-    "scores": {
-      "capability": 4,
-      "economic": 3,
+      "capability": 3,
+      "economic": 5,
       "irreversibility": 7,
-      "timeline": 5,
-      "systemic": 9
-    },
-    "weightedScore": 5.5,
-    "primaryDriver": "systemic"
-  },
-  {
-    "source": "Nature",
-    "date": "Apr 20, 2026",
-    "title": "Nature Nanotechnology Issues AI Guidelines for Peer Review",
-    "summary": "Nature Nanotechnology published editorial guidelines for responsible use of generative AI in peer review, emphasizing human accountability and transparency. The journal warns against over-reliance on AI tools that remain 'black boxes' and can produce inaccurate results.",
-    "url": "https://www.nature.com/articles/s41565-026-02177-2",
-    "scores": {
-      "capability": 4,
-      "economic": 3,
-      "irreversibility": 6,
       "timeline": 4,
       "systemic": 8
     },
-    "weightedScore": 5.0,
+    "weightedScore": 5.4,
     "primaryDriver": "systemic"
   }
 ];
