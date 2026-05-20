@@ -115,7 +115,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>Organizational AI <span>Radar</span></h1>
-                        <p>News Ranked by Importance - Updated: May 18, 2026 at 09:39 UTC</p>
+                        <p>News Ranked by Importance - Updated: May 20, 2026 at 08:53 UTC</p>
                     </div>
                 </div>
             </div>
@@ -200,47 +200,79 @@
     <script>
         const newsData = [
   {
-    "source": "TechCrunch",
-    "date": "May 1, 2026",
-    "title": "Pentagon inks deals with Nvidia, Microsoft, AWS and Reflection AI for classified networks",
-    "summary": "The Pentagon signed agreements with major tech companies to deploy AI on classified military networks for 'lawful operational use.' This follows disputes with Anthropic over AI safety guardrails and represents acceleration toward an 'AI-first fighting force.'",
-    "url": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/",
+    "source": "Fortune (from March)",
+    "date": "March 13, 2026",
+    "title": "Morgan Stanley warns massive AI breakthrough coming in 2026 - most aren't ready",
+    "summary": "Investment bank predicts transformative AI leap driven by unprecedented compute accumulation at top labs. Cites Elon Musk's belief that 10x compute doubles model intelligence, with GPT-5.4 scoring 83% on economic value tasks, approaching human expert level.",
+    "url": "https://fortune.com/2026/03/13/elon-musk-morgan-stanley-ai-leap-2026/",
+    "scores": {
+      "capability": 9,
+      "economic": 8,
+      "irreversibility": 8,
+      "timeline": 9,
+      "systemic": 8
+    },
+    "weightedScore": 8.4,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "Tom's Hardware",
+    "date": "May 19, 2026",
+    "title": "Tech industry cuts 80,000 jobs in Q1 2026, nearly half attributed to AI replacement",
+    "summary": "Technology sector eliminated nearly 80,000 positions in first quarter 2026, with approximately half reportedly due to AI automation. MIT study indicates AI can replace 11.7% of all US workers, impacting every industry and state across America.",
+    "url": "https://www.tomshardware.com/tech-industry/standard-chartered-plans-to-cut-7-000-jobs-in-ai-push-lender-wants-to-replace-lower-value-human-capital-and-focus-on-automation",
+    "scores": {
+      "capability": 6,
+      "economic": 9,
+      "irreversibility": 7,
+      "timeline": 8,
+      "systemic": 9
+    },
+    "weightedScore": 7.8,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Google at I/O 2026",
+    "date": "May 20, 2026",
+    "title": "Google unveils Gemini 3.5 Flash, Gemini Omni video AI, and Spark 24/7 AI agent",
+    "summary": "Google announced Gemini 3.5 Flash with 4x faster performance, Gemini Omni for cinematic video generation, and Gemini Spark - a 24/7 personal AI agent running on virtual machines. The agent integrates with Google Workspace and can automate workflows continuously in the background.",
+    "url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html",
     "scores": {
       "capability": 8,
       "economic": 7,
-      "irreversibility": 9,
-      "timeline": 7,
-      "systemic": 9
+      "irreversibility": 7,
+      "timeline": 8,
+      "systemic": 6
     },
-    "weightedScore": 7.9,
-    "primaryDriver": "irreversibility"
-  },
-  {
-    "source": "MIT Technology Review",
-    "date": "May 5, 2026",
-    "title": "Artificial scientists could reshape research but may narrow scientific inquiry",
-    "summary": "AI systems that can autonomously generate hypotheses, design experiments, and interpret results are emerging. While promising for frontier labs and society, they could narrow the scope of scientific inquiry and change how research is conducted.",
-    "url": "https://www.technologyreview.com/2026/05/05/1136848/the-download-musk-openai-altman-trial-ai-democracy/",
-    "scores": {
-      "capability": 9,
-      "economic": 6,
-      "irreversibility": 8,
-      "timeline": 6,
-      "systemic": 8
-    },
-    "weightedScore": 7.6,
+    "weightedScore": 7.4,
     "primaryDriver": "capability"
   },
   {
     "source": "Bloomberg",
-    "date": "May 18, 2026",
-    "title": "AI company warns Mythos model could hack most modern computing systems",
-    "summary": "An AI company's own experts warned that their Mythos model could potentially hack the systems beneath most modern computing. Banks and government agencies are racing to gauge the cybersecurity threat posed by advanced AI systems.",
-    "url": "https://www.bloomberg.com/ai",
+    "date": "May 19, 2026",
+    "title": "Standard Chartered to cut 8,000 jobs as AI replaces 'lower-value human capital'",
+    "summary": "CEO Bill Winters announced cutting 8,000 support roles over four years, replacing what he called 'lower-value human capital' with AI automation. The bank targets 15% reduction in corporate functions including HR, risk, and compliance while scaling practical AI uses.",
+    "url": "https://www.bloomberg.com/news/articles/2026-05-19/bank-executives-ai-talk-takes-frightening-turn-for-workers",
+    "scores": {
+      "capability": 5,
+      "economic": 9,
+      "irreversibility": 8,
+      "timeline": 6,
+      "systemic": 9
+    },
+    "weightedScore": 7.4,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "Fortune (April)",
+    "date": "April 23, 2026",
+    "title": "Unauthorized group leaked Anthropic's dangerous Mythos AI model through vendor breach",
+    "summary": "Private Discord group gained unauthorized access to Anthropic's Mythos cybersecurity AI model on launch day through third-party vendor compromise. Model can find zero-day vulnerabilities and was deemed too dangerous for public release, raising security concerns.",
+    "url": "https://fortune.com/2026/04/23/anthropic-mythos-leak-dario-amodei-ceo-cybersecurity-hackers-exploits-ai/",
     "scores": {
       "capability": 8,
       "economic": 6,
-      "irreversibility": 7,
+      "irreversibility": 8,
       "timeline": 6,
       "systemic": 9
     },
@@ -248,195 +280,163 @@
     "primaryDriver": "systemic"
   },
   {
-    "source": "Fortune",
-    "date": "May 17, 2026",
-    "title": "Microsoft AI chief predicts full white-collar automation within 18 months",
-    "summary": "Microsoft AI CEO Mustafa Suleyman predicted that most computer-based work including accounting, legal, marketing, and project management will be fully automated by AI within 18 months. However, current evidence shows limited disruption in professional services so far.",
-    "url": "https://fortune.com/article/why-microsoft-ai-chief-mustafa-suleyman-predicts-ai-automation-18-months/",
+    "source": "European Business Magazine",
+    "date": "May 19, 2026",
+    "title": "Banking industry faces AI job cut pressure as Standard Chartered sets benchmark",
+    "summary": "Standard Chartered's 8,000 job cuts create pressure on major banks including HSBC, Barclays, Deutsche Bank to match AI efficiency gains. Market rewarded announcement with 2.5% share price rise, establishing new benchmark for AI-driven workforce transformation.",
+    "url": "https://europeanbusinessmagazine.com/business-standard-chartered-8000-jobs-ai-banking-2026",
     "scores": {
-      "capability": 6,
+      "capability": 5,
       "economic": 9,
-      "irreversibility": 5,
-      "timeline": 8,
+      "irreversibility": 8,
+      "timeline": 7,
       "systemic": 8
     },
-    "weightedScore": 7.2,
-    "primaryDriver": "economic"
-  },
-  {
-    "source": "Nature",
-    "date": "May 12, 2026",
-    "title": "Scientists debate limiting biological AI software to ward off threats",
-    "summary": "Scientists are debating whether to limit biological AI software capabilities to prevent potential threats. This comes as AI systems become more capable of designing biological materials and organisms, raising biosafety concerns.",
-    "url": "https://www.nature.com/news",
-    "scores": {
-      "capability": 8,
-      "economic": 5,
-      "irreversibility": 8,
-      "timeline": 5,
-      "systemic": 9
-    },
-    "weightedScore": 7.1,
-    "primaryDriver": "systemic"
-  },
-  {
-    "source": "Science Daily",
-    "date": "May 5, 2026",
-    "title": "AI lets chemists design molecules by simply describing them",
-    "summary": "New AI system Synthegy allows chemists to guide synthesis and reaction planning using simple language. The system can generate complex molecules that usually require years of experience and countless decisions, potentially revolutionizing chemical research.",
-    "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
-    "scores": {
-      "capability": 8,
-      "economic": 6,
-      "irreversibility": 7,
-      "timeline": 6,
-      "systemic": 7
-    },
-    "weightedScore": 7.0,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "TechCrunch",
-    "date": "May 15, 2026",
-    "title": "OpenAI launches ChatGPT personal finance tools for Pro users",
-    "summary": "OpenAI launched personal finance tools for ChatGPT Pro subscribers, allowing them to connect bank accounts from 12,000+ institutions via Plaid. Users can analyze spending, get financial advice, and access dashboard views of portfolios and subscriptions.",
-    "url": "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/",
-    "scores": {
-      "capability": 7,
-      "economic": 8,
-      "irreversibility": 6,
-      "timeline": 5,
-      "systemic": 7
-    },
-    "weightedScore": 6.8,
+    "weightedScore": 7.4,
     "primaryDriver": "economic"
   },
   {
     "source": "MIT Technology Review",
-    "date": "April 2026",
-    "title": "Teams of AI agents emerge to cooperate on complex goals",
-    "summary": "The first wave of AI agents could run browsers or write code but only acted alone. Coming next are teams of agents that cooperate to achieve far more complex goals, representing a significant evolution in AI capabilities.",
-    "url": "https://www.technologyreview.com/2026/04/21/1135643/10-ai-artificial-intelligence-trends-technologies-research-2026/",
+    "date": "May 14, 2026",
+    "title": "China's AI-generated short drama industry produces 470 shows daily, cutting costs 90%",
+    "summary": "Chinese short drama industry now produces average 470 AI-generated shows daily using no human actors, cameras, or CGI specialists. Production timelines shrunk from months to weeks with 90% cost reduction, driven by performance data and expanding overseas.",
+    "url": "https://www.technologyreview.com/",
     "scores": {
-      "capability": 8,
-      "economic": 6,
+      "capability": 7,
+      "economic": 8,
+      "irreversibility": 7,
+      "timeline": 6,
+      "systemic": 6
+    },
+    "weightedScore": 6.9,
+    "primaryDriver": "economic"
+  },
+  {
+    "source": "BusinessToday",
+    "date": "May 20, 2026",
+    "title": "Google reveals massive AI usage surge - 3.2 quadrillion tokens processed monthly",
+    "summary": "Google announced processing 3.2 quadrillion tokens monthly, up from 480 trillion in 2025. AI Overviews reached 2.5 billion monthly users, Gemini app grew from 400M to 900M users in one year, and users generated 50 billion images with Nano Banana tool.",
+    "url": "https://www.businesstoday.in/technology/artificial-intelligence/story/google-io-2026-new-gemini-app-flash-model-and-agentic-ai-push-heres-everything-google-announced-532395-2026-05-20",
+    "scores": {
+      "capability": 6,
+      "economic": 8,
       "irreversibility": 6,
       "timeline": 7,
       "systemic": 6
     },
-    "weightedScore": 6.8,
-    "primaryDriver": "capability"
+    "weightedScore": 6.7,
+    "primaryDriver": "economic"
   },
   {
-    "source": "MIT Technology Review",
-    "date": "March 2026",
-    "title": "US and China nearly tied in AI model performance race",
-    "summary": "Arena rankings show the US and China are almost neck-and-neck on AI model performance. As of March 2026, Anthropic leads followed closely by xAI, Google, and OpenAI, while Chinese models like DeepSeek lag only modestly behind top performers.",
-    "url": "https://www.technologyreview.com/2026/04/13/1135675/want-to-understand-the-current-state-of-ai-check-out-these-charts/",
+    "source": "Business Standard",
+    "date": "May 20, 2026",
+    "title": "Google introduces Gemini 3.5 Pro launching next month with enhanced capabilities",
+    "summary": "Google confirmed Gemini 3.5 Pro is being tested internally and will roll out publicly next month. The advanced model follows the Flash version and represents Google's push into the 'Agentic era' with improved reasoning and multi-modal understanding.",
+    "url": "https://www.business-standard.com/technology/tech-news/google-i-o-2026-all-about-gemini-3-5-spark-omni-models-and-revamped-app-126052000494_1.html",
     "scores": {
       "capability": 7,
       "economic": 6,
       "irreversibility": 6,
-      "timeline": 6,
-      "systemic": 8
-    },
-    "weightedScore": 6.6,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "Science Daily",
-    "date": "April 17, 2026",
-    "title": "Quantum AI dramatically improves predictions of chaotic systems",
-    "summary": "Researchers demonstrated that blending quantum computing with AI can dramatically improve predictions of complex, chaotic systems. The quantum computer identifies hidden patterns, making AI more accurate and stable over time.",
-    "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
-    "scores": {
-      "capability": 8,
-      "economic": 5,
-      "irreversibility": 7,
-      "timeline": 5,
-      "systemic": 6
-    },
-    "weightedScore": 6.6,
-    "primaryDriver": "capability"
-  },
-  {
-    "source": "Techmeme",
-    "date": "May 18, 2026",
-    "title": "AI-exposed occupations show employment decline while broader market grows",
-    "summary": "US Bureau of Labor Statistics data shows employment in 18 AI-exposed occupations fell 0.2% between May 2024-2025, while the broader US labor market rose 0.8%. This suggests AI may be starting to impact specific job categories.",
-    "url": "https://www.techmeme.com/",
-    "scores": {
-      "capability": 5,
-      "economic": 8,
-      "irreversibility": 6,
-      "timeline": 6,
-      "systemic": 7
+      "timeline": 7,
+      "systemic": 5
     },
     "weightedScore": 6.4,
-    "primaryDriver": "economic"
+    "primaryDriver": "capability"
   },
   {
-    "source": "NewsNow",
+    "source": "LLM Stats",
+    "date": "May 20, 2026",
+    "title": "Gemini 3.5 Flash goes GA with frontier-level intelligence at 4x speed",
+    "summary": "Google released Gemini 3.5 Flash globally at $1.50/$9 per 1M tokens with 1M context window. Model achieves 76.2% on Terminal-Bench 2.1, beating Gemini 3.1 Pro on coding and agents while offering 4x speed improvement over comparable models.",
+    "url": "https://llm-stats.com/ai-news",
+    "scores": {
+      "capability": 7,
+      "economic": 7,
+      "irreversibility": 5,
+      "timeline": 8,
+      "systemic": 4
+    },
+    "weightedScore": 6.4,
+    "primaryDriver": "capability"
+  },
+  {
+    "source": "EU Council",
     "date": "May 18, 2026",
-    "title": "EU AI Act transparency provisions become fully applicable August 2026",
-    "summary": "The European Union's AI Act, the world's first comprehensive AI law, is being phased in with key transparency and high-risk system provisions becoming fully applicable by August 2026. This represents major regulatory milestone for global AI governance.",
-    "url": "https://www.newsnow.com/us/Science/AI",
+    "title": "EU Council and Parliament agree to streamline AI Act implementation rules",
+    "summary": "Provisional agreement reached on 'Omnibus VII' package to simplify EU AI legislation. New timelines set high-risk AI systems for December 2027, with delayed application for embedded systems until August 2028, and new prohibitions on non-consensual intimate content generation.",
+    "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/",
     "scores": {
       "capability": 4,
-      "economic": 7,
+      "economic": 6,
       "irreversibility": 8,
-      "timeline": 6,
+      "timeline": 5,
       "systemic": 8
     },
-    "weightedScore": 6.4,
+    "weightedScore": 6.2,
     "primaryDriver": "irreversibility"
   },
   {
     "source": "MIT News",
-    "date": "May 12, 2026",
+    "date": "May 18, 2026",
     "title": "MIT launches AI education program with AI-powered personalization",
-    "summary": "MIT Open Learning debuts new AI education program featuring AI-powered personalization and free introductory courses for learners globally. The program represents a new approach to scaling AI education using AI itself.",
-    "url": "https://news.mit.edu/topic/artificial-intelligence2",
+    "summary": "MIT Open Learning debuts Universal Learning with AI-powered personalization and free introductory courses. Program aims to prepare students for AI era by teaching foundational skills adaptable across sectors regardless of technology changes.",
+    "url": "https://news.mit.edu/",
     "scores": {
       "capability": 5,
       "economic": 6,
-      "irreversibility": 4,
-      "timeline": 5,
+      "irreversibility": 6,
+      "timeline": 6,
       "systemic": 7
     },
-    "weightedScore": 5.4,
+    "weightedScore": 5.9,
+    "primaryDriver": "systemic"
+  },
+  {
+    "source": "NPR / MIT Technology Review",
+    "date": "May 18, 2026",
+    "title": "Jury dismisses all claims in Elon Musk's $150B lawsuit against OpenAI",
+    "summary": "Federal jury ruled Musk waited too long to sue OpenAI over allegedly violating nonprofit commitments. Judge accepted verdict after less than two hours of deliberations, dismissing claims against OpenAI and Microsoft on statute of limitations grounds.",
+    "url": "https://www.npr.org/2026/05/18/nx-s1-5822366/musk-altman-openai-jury-verdict-claims-dismissed",
+    "scores": {
+      "capability": 3,
+      "economic": 8,
+      "irreversibility": 7,
+      "timeline": 4,
+      "systemic": 7
+    },
+    "weightedScore": 5.8,
     "primaryDriver": "economic"
   },
   {
-    "source": "Nature Machine Intelligence",
-    "date": "May 7, 2026",
-    "title": "New research shows mobile vs static collectives exhibit different AI operations",
-    "summary": "Study examines how human-machine interactions across the AI lifecycle affect control and decision-making in military domains. Research shows collectives exhibit different operations and limitations depending on whether components are static or mobile.",
-    "url": "https://www.nature.com/natmachintell/",
+    "source": "MIT Technology Review",
+    "date": "May 14, 2026",
+    "title": "Google AI surfaces users' personal contact info with no easy prevention method",
+    "summary": "People report their personal contact information being surfaced by Google AI systems, with apparently no straightforward way to prevent it. Raises privacy concerns about AI systems accessing and exposing personal data without clear user control mechanisms.",
+    "url": "https://www.technologyreview.com/",
     "scores": {
-      "capability": 6,
-      "economic": 4,
-      "irreversibility": 5,
-      "timeline": 4,
-      "systemic": 6
+      "capability": 4,
+      "economic": 5,
+      "irreversibility": 7,
+      "timeline": 5,
+      "systemic": 8
     },
-    "weightedScore": 5.2,
-    "primaryDriver": "capability"
+    "weightedScore": 5.8,
+    "primaryDriver": "systemic"
   },
   {
-    "source": "Science Daily",
-    "date": "May 13, 2026",
-    "title": "AI discovers speech patterns reveal executive brain function",
-    "summary": "Researchers found that everyday speech patterns including pauses and word-finding struggles are closely tied to executive function. AI can analyze natural conversations to predict mental capabilities that power memory, planning, and flexible thinking.",
-    "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
+    "source": "Tom's Guide",
+    "date": "May 19, 2026",
+    "title": "Google unveils Samsung Intelligent Eyewear smart glasses with Gemini AI",
+    "summary": "Google partnered with Samsung, Warby Parker, and Gentle Monster to launch AI-powered smart glasses. Features Gemini capabilities without requiring phone interaction, with live demos showcasing voice-controlled photo editing and superhero transformations.",
+    "url": "https://www.tomsguide.com/news/live/google-io-2026-live-news-updates",
     "scores": {
       "capability": 6,
-      "economic": 4,
-      "irreversibility": 5,
-      "timeline": 4,
-      "systemic": 6
+      "economic": 5,
+      "irreversibility": 6,
+      "timeline": 6,
+      "systemic": 4
     },
-    "weightedScore": 5.1,
+    "weightedScore": 5.5,
     "primaryDriver": "capability"
   }
 ];
